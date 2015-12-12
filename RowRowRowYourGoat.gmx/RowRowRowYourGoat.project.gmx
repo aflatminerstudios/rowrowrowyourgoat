@@ -62,10 +62,19 @@
     <object>objects\objShoreRight</object>
     <object>objects\objCheckpoint</object>
     <object>objects\objExplosion</object>
+    <object>objects\objGameoverControl</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roomTestRoom</room>
     <room>rooms\roomTitle</room>
+    <rooms name="Test Course">
+      <room>rooms\roomTestRoom</room>
+      <room>rooms\roomTestRoom2</room>
+      <room>rooms\roomTestRoom3</room>
+      <room>rooms\roomTestRoom4</room>
+      <room>rooms\roomTestRoom5</room>
+    </rooms>
+    <room>rooms\roomGameover</room>
+    <room>rooms\roomTemplate</room>
     <room>rooms\roomShaderTest</room>
     <room>rooms\roomCredits</room>
   </rooms>

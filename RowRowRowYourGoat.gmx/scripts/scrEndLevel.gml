@@ -8,6 +8,4 @@ with (objGameControl) {
 global.nextLevel += 1;
 global.totalScore += t;
 
-nextLevel = room;
-
-room_goto(nextLevel);
+room_goto(global.levelList[global.course, global.nextLevel])

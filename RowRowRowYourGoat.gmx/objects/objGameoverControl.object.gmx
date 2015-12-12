@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,19 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initializes global variables at beginnig of game only
+            <string>///Check for space
 
-global.nextLevel = 1;
-
-global.totalScore = 0;
-
-global.nextGoal = 1;
-
-global.course = 0;
+if (keyboard_check_pressed(vk_space)) {
+  room_goto(roomTitle);
+}
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,14 +52,12 @@ global.course = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Level room codes
+            <string>///There it is
+draw_set_color(c_red);
 
-global.levelList[0, 1] = roomTestRoom;
-global.levelList[0, 2] = roomTestRoom2;
-global.levelList[0, 3] = roomTestRoom3;
-global.levelList[0, 4] = roomTestRoom4;
-global.levelList[0, 5] = roomTestRoom5;
-global.levelList[0, 6] = roomGameover;
+draw_text(100, 100, "You finished this course!");
+draw_text(100, 300, "Total Score: " + string(global.totalScore));
+draw_text(100, 500, "Press space to go back to title screen.");
 </string>
           </argument>
         </arguments>
