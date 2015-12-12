@@ -5,21 +5,50 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Placeholders">
+      <sprite>sprites\sprPlaceholderObstacle</sprite>
+      <sprite>sprites\sprPlaceholderEnemy</sprite>
+      <sprite>sprites\sprPlaceholderCollectible</sprite>
+    </sprites>
+    <sprite>sprites\sprBoat</sprite>
+  </sprites>
   <backgrounds name="background">
-    <background>background\bgGrid</background>
+    <background>background\sprBGTest</background>
+	<background>background\bgGrid</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrRunWaveShader.gml</script>
+    <script>scripts\scrNullScript.gml</script>
+    <script>scripts\scrCheckLeftButton.gml</script>
+    <script>scripts\scrCheckRightButton.gml</script>
+    <script>scripts\scrCollideWithEnemy.gml</script>
+    <script>scripts\scrCollideWithCollectible.gml</script>
+    <script>scripts\scrEndLevel.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
   </shaders>
   <objects name="objects">
     <object>objects\objWaveShader</object>
+    <object>objects\objBoat</object>
+    <objects name="Placeholders">
+      <object>objects\objPlaceholderEnemy</object>
+      <object>objects\objPlaceholderObstacle</object>
+      <object>objects\objPlaceholderCollectible</object>
+    </objects>
+    <object>objects\objEnemy</object>
+    <object>objects\objObstacle</object>
+    <objects name="TitleScreen">
+      <object>objects\objTitleControl</object>
+    </objects>
+    <object>objects\objCollectible</object>
+    <object>objects\objGlobalsCreator</object>
+    <object>objects\objGameControl</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\roomTestRoom</room>
     <room>rooms\roomTitle</room>
     <room>rooms\roomCredits</room>
   </rooms>
