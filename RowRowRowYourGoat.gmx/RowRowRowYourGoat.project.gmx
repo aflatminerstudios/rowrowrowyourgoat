@@ -12,10 +12,14 @@
       <sprite>sprites\sprPlaceholderCollectible</sprite>
     </sprites>
     <sprite>sprites\sprBoat</sprite>
+    <sprites name="Background Sprites">
+      <sprite>sprites\sprShoreRight</sprite>
+      <sprite>sprites\sprShoreLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
-	<background>background\bgGrid</background>
+    <background>background\bgRiverBottom</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -31,7 +35,9 @@
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
   </shaders>
   <objects name="objects">
-    <object>objects\objWaveShader</object>
+    <objects name="Shaders">
+      <object>objects\objWaveShader</object>
+    </objects>
     <object>objects\objBoat</object>
     <objects name="Placeholders">
       <object>objects\objPlaceholderEnemy</object>
@@ -46,9 +52,12 @@
     <object>objects\objCollectible</object>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>
+    <object>objects\objShoreLeft</object>
+    <object>objects\objShoreRight</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTestRoom</room>
+    <room>rooms\roomShaderTest</room>
     <room>rooms\roomTitle</room>
     <room>rooms\roomCredits</room>
   </rooms>

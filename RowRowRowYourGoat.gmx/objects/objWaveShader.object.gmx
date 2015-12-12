@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -78,7 +78,7 @@ steps = 0;
 shader_set(shaderWaves);
 var shaderTime = shader_get_uniform(shaderWaves, "iGlobalTime");
 shader_set_uniform_f(shaderTime, steps);
-draw_background(bgGrid, 0, 0);
+draw_background(bgRiverBottom, 0, 0);
 shader_reset();
 </string>
           </argument>
