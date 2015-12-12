@@ -21,11 +21,37 @@ void main()
 //######################_==_YOYO_SHADER_MARKER_==_######################@~//
 // Simple passthrough fragment shader
 //
+uniform float iGlobalTime;
+uniform vec3 iResolution;
+uniform vec4 iChannel0;
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 void main()
 {
-    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
+    float speedMultiplier = 0.25; 
+    vec2 uv = v_vTexcoord.xy;// / iResolution.xy;
+    
+    uv.y += (cos((uv.y + (iGlobalTime * 0.04 * speedMultiplier)) * 45.0) * 0.0019) +
+    (cos((uv.y + (iGlobalTime * 0.1 * speedMultiplier)) * 10.0) * 0.002);
+    
+    uv.x += (sin((uv.y + (iGlobalTime * 0.07 * speedMultiplier)) * 5.0) * 0.0029) +
+    (sin((uv.y + (iGlobalTime * 0.1 * speedMultiplier)) * 5.0) * 0.002);
+    
+    
+    vec4 texColor = texture2D(gm_BaseTexture,uv);
+    gl_FragColor = texColor;
 }
 
+
+/*
+// Working green shader
+void main(void)
+{
+    vec4 originalColor = texture2D(gm_BaseTexture, v_vTexcoord);
+    float Green = originalColor.g;
+    
+    vec4 newColor = vec4(0.0, Green, 0.0, 1.0);
+    gl_FragColor = newColor;
+}
+*/
