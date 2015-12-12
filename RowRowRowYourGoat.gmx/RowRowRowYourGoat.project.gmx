@@ -6,8 +6,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Placeholders">
+      <sprite>sprites\sprPlaceholderObstacle</sprite>
+      <sprite>sprites\sprPlaceholderEnemy</sprite>
+      <sprite>sprites\sprPlaceholderCollectible</sprite>
+    </sprites>
     <sprite>sprites\sprBoat</sprite>
-    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -18,6 +22,8 @@
     <script>scripts\scrNullScript.gml</script>
     <script>scripts\scrCheckLeftButton.gml</script>
     <script>scripts\scrCheckRightButton.gml</script>
+    <script>scripts\scrCollideWithEnemy.gml</script>
+    <script>scripts\scrCollideWithCollectible.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
@@ -25,6 +31,14 @@
   <objects name="objects">
     <object>objects\objWaveShader</object>
     <object>objects\objBoat</object>
+    <objects name="Placeholders">
+      <object>objects\objPlaceholderEnemy</object>
+      <object>objects\objPlaceholderObstacle</object>
+      <object>objects\objPlaceholderCollectible</object>
+    </objects>
+    <object>objects\objEnemy</object>
+    <object>objects\objObstacle</object>
+    <object>objects\objCollectible</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTestRoom</room>
