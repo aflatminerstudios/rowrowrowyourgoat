@@ -24,6 +24,7 @@
     <script>scripts\scrCheckRightButton.gml</script>
     <script>scripts\scrCollideWithEnemy.gml</script>
     <script>scripts\scrCollideWithCollectible.gml</script>
+    <script>scripts\scrEndLevel.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
@@ -39,6 +40,8 @@
     <object>objects\objEnemy</object>
     <object>objects\objObstacle</object>
     <object>objects\objCollectible</object>
+    <object>objects\objGlobalsCreator</object>
+    <object>objects\objGameControl</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTestRoom</room>

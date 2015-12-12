@@ -62,6 +62,7 @@
     <instance objName="objPlaceholderCollectible" x="448" y="320" name="inst_BA76CD2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderCollectible" x="480" y="544" name="inst_66466536" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderCollectible" x="864" y="416" name="inst_0E246A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlobalsCreator" x="0" y="0" name="inst_E955AA61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
