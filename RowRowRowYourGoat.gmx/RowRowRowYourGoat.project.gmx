@@ -15,7 +15,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
-	<background>background\bgGrid</background>
+    <background>background\bgGrid</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

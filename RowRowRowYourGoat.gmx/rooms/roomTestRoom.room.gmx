@@ -55,10 +55,6 @@
     <instance objName="objPlaceholderEnemy" x="352" y="128" name="inst_240E54CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderEnemy" x="768" y="64" name="inst_6DD93413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderEnemy" x="288" y="544" name="inst_7CFEC12E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="800" y="224" name="inst_1BC7C0D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="256" y="320" name="inst_5405D9D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="576" y="256" name="inst_6F0C4BAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="736" y="512" name="inst_D1E92A03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderCollectible" x="448" y="320" name="inst_BA76CD2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderCollectible" x="480" y="544" name="inst_66466536" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderCollectible" x="864" y="416" name="inst_0E246A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
