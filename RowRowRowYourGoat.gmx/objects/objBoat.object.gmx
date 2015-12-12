@@ -28,25 +28,29 @@
             <string>///Setup base variables
 
 /// For movement
-maxForward = 8;
-maxTurn = 6;
+maxForward = 5;
+maxTurn = 2;
 
-maxSpeed = 12;
-maxTurnSpeed = 8;
+maxSpeed = 8;
+maxTurnSpeed = 3;
 
 numFrames = 60;
+turnFrames = 30;
 
-decelPct = 0.6;
+decelPct = 0.7;
 accelPct = 1 - decelPct;
 
 accelFrames = numFrames * accelPct;
 decelFrames = numFrames - accelFrames;
 
+turnAccelFrames = turnFrames * accelPct;
+turnDecelFrames = turnFrames - turnAccelFrames;
+
 moveAccel = maxForward / accelFrames;
-turnAccel = maxTurn / accelFrames;
+turnAccel = maxTurn / turnAccelFrames;
 
 moveDecel = maxForward / decelFrames;
-turnDecel = maxTurn / decelFrames;
+turnDecel = maxTurn / turnDecelFrames;
 
 //Which frame of movement are we on
 curFrame = numFrames + 1;
@@ -64,6 +68,10 @@ reachedDir = false;
 direction = 0;
 
 image_speed = 0;
+
+
+//Bouncing off an emey?
+bouncing = false;
 
 </string>
           </argument>
@@ -126,47 +134,49 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckR
             <kind>1</kind>
             <string>///Movement
 
-if (curFrame &lt; accelFrames) {  
-  speed = curForward;
-  direction += curTurn;
+if (!bouncing) {
+  if (curFrame &lt; accelFrames) {  
+    speed = curForward;
+    direction += curTurn;
+    
+    curForward += moveAccel;
+    curTurn += turnAccel * dir;
   
-  curForward += moveAccel;
-  curTurn += turnAccel * dir;
-
- //If in middle of turn, turn harder  
- if (sign(curTurn) != sign(dir)) {
-  curTurn += turnAccel * dir;
- }
+   //If in middle of turn, turn harder  
+   if (sign(curTurn) != sign(dir)) {
+    curTurn += turnAccel * dir;
+   }
+    
+    curFrame += 1;
+  } else if (speed &gt; 0) {
+    speed = curForward;  
+    direction += curTurn;
+    
+    curForward -= moveDecel;
+    
+    if (sign(curTurn) == sign(dir)) {
+      reachedDir = true;
+    }
+    
+    if (!reachedDir || sign(curTurn) == sign(dir)) {
+      curTurn -= turnDecel * dir;
+    } else {
+      curTurn = 0;
+    }
+    
+    curFrame += 1;
   
-  curFrame += 1;
-} else if (speed &gt; 0) {
-  speed = curForward;  
-  direction += curTurn;
-  
-  curForward -= moveDecel;
-  
-  if (sign(curTurn) == sign(dir)) {
-    reachedDir = true;
-  }
-  
-  if (!reachedDir || sign(curTurn) == sign(dir)) {
-    curTurn -= turnDecel * dir;
   } else {
+    curForward = 0;
+    speed = 0;
     curTurn = 0;
   }
   
-  curFrame += 1;
-
-} else {
-  curForward = 0;
-  speed = 0;
-  curTurn = 0;
-}
-
-if (curForward &gt; maxSpeed) {
-  curForward = maxSpeed;
-} else if (abs(curTurn) &gt; maxTurnSpeed) {
-  curTurn = maxTurnSpeed * sign(curTurn);
+  if (curForward &gt; maxSpeed) {
+    curForward = maxSpeed;
+  } else if (abs(curTurn) &gt; maxTurnSpeed) {
+    curTurn = maxTurnSpeed * sign(curTurn);
+  }
 }
 </string>
           </argument>
