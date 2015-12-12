@@ -8,6 +8,15 @@
   <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scrRunWaveShader.gml</script>
+  </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shaderWaves.shader</shader>
+  </shaders>
+  <objects name="objects">
+    <object>objects\objWaveShader</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
     <room>rooms\roomCredits</room>
