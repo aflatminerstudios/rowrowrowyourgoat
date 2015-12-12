@@ -12,6 +12,7 @@
       <sprite>sprites\sprPlaceholderCollectible</sprite>
     </sprites>
     <sprite>sprites\sprBoat</sprite>
+    <sprite>sprites\sprCheckpoint</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -46,6 +47,7 @@
     <object>objects\objCollectible</object>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>
+    <object>objects\objCheckpoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTestRoom</room>

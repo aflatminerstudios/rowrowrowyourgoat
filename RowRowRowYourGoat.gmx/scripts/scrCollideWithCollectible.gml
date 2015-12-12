@@ -3,9 +3,18 @@
 player = argument0;
 object = argument1;
 
-///show_message("Hooray! You collected object " + string(object.id));
-
-//Destroy collectable
-with (object) {
-  alarm[0] = 1;
+if (object.object_index == objCheckpoint) {
+  if (object.number == global.nextGoal) {
+    global.nextGoal++
+    with (object) {
+      alarm[0] = 1;
+    }
+  }  
+} else {
+  
+  //Destroy collectable
+  with (object) {
+    alarm[0] = 1;
+  }
+  
 }

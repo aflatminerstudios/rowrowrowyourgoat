@@ -139,8 +139,6 @@ if (curFrame &lt; accelFrames) {
  }
   
   curFrame += 1;
-  
-  show_debug_message(string(curForward) + " " +  string(curTurn));
 } else if (speed &gt; 0) {
   speed = curForward;  
   direction += curTurn;
@@ -159,7 +157,6 @@ if (curFrame &lt; accelFrames) {
   
   curFrame += 1;
 
-  show_debug_message(string(curForward) + " " +  string(curTurn));
 } else {
   curForward = 0;
   speed = 0;
