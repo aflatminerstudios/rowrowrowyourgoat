@@ -53,7 +53,7 @@
   <instances>
     <instance objName="objBoat" x="608" y="416" name="inst_6FEF68FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderEnemy" x="352" y="128" name="inst_240E54CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderEnemy" x="768" y="64" name="inst_6DD93413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderEnemy" x="768" y="224" name="inst_6DD93413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderEnemy" x="288" y="544" name="inst_7CFEC12E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGlobalsCreator" x="0" y="0" name="inst_E955AA61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameControl" x="0" y="0" name="inst_955F09E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
