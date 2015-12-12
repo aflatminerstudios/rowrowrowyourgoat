@@ -11,13 +11,17 @@
       <sprite>sprites\sprPlaceholderEnemy</sprite>
       <sprite>sprites\sprPlaceholderCollectible</sprite>
     </sprites>
-    <sprite>sprites\sprBoat</sprite>
     <sprites name="Background Sprites">
       <sprite>sprites\sprShoreRight</sprite>
       <sprite>sprites\sprShoreLeft</sprite>
     </sprites>
     <sprite>sprites\sprCheckpoint</sprite>
     <sprite>sprites\sprExplosion</sprite>
+    <sprites name="Boat">
+      <sprite>sprites\sprLeftRow</sprite>
+      <sprite>sprites\sprBoat</sprite>
+      <sprite>sprites\sprRightRow</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>

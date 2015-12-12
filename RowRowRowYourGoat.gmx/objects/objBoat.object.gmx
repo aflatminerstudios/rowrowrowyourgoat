@@ -28,10 +28,10 @@
             <string>///Setup base variables
 
 /// For movement
-maxForward = 5;
+maxForward = 2;
 maxTurn = 2;
 
-maxSpeed = 8;
+maxSpeed = 5;
 maxTurnSpeed = 3;
 
 numFrames = 60;
@@ -66,7 +66,6 @@ reachedDir = false;
 
 ///Set initial direction
 direction = 0;
-image_speed = 0;
 
 
 //Bouncing off an emey?
@@ -133,6 +132,8 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames) &amp;&amp; scrCheckLe
   curFrame = 0;
   dir = 1;
   reachedDir = false;
+  sprite_index = sprRightRow;
+  image_index = 0;
 }
 
 if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckRightButton()) {
@@ -141,6 +142,8 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckR
   curFrame = 0;
   dir = -1;
   reachedDir = false;  
+  sprite_index = sprLeftRow;
+  image_index = 0;
 }
 </string>
           </argument>
@@ -200,6 +203,7 @@ if (!bouncing) {
     curForward = 0;
     speed = 0;
     curTurn = 0;
+    sprite_index = sprBoat;
   }
   
   if (curForward &gt; maxSpeed) {
