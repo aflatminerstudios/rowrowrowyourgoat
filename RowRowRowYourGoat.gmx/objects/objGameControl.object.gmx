@@ -60,6 +60,8 @@ global.nextGoal = 1;
 numCheckpoints = 99999;
 alarm[11] = 1;
 
+levelOver = false;
+
 </string>
           </argument>
         </arguments>
@@ -108,8 +110,10 @@ numCheckpoints = instance_number(objCheckpoint);
             <kind>1</kind>
             <string>///Increment timer by 1 every second
 
-timer += 1;
-alarm[0] = room_speed;
+if (!levelOver) {
+  timer += 1;
+  alarm[0] = room_speed;
+}
 </string>
           </argument>
         </arguments>
@@ -134,6 +138,30 @@ alarm[0] = room_speed;
             <kind>1</kind>
             <string>///Sees if all checkpoints have been found
 if (instance_number(objCheckpoint) == 0) {
+  levelOver = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///If level is over and space pressed, go to next level
+if (levelOver &amp;&amp; keyboard_check_pressed(vk_space)) {
   scrEndLevel();
 }
 </string>
@@ -160,9 +188,38 @@ if (instance_number(objCheckpoint) == 0) {
             <kind>1</kind>
             <string>///Draw timer
 
-draw_set_color(c_red);
+if (!levelOver) {
+  draw_set_color(c_red);
+  
+  draw_text(640, 50, timer);
 
-draw_text(640, 50, timer);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (levelOver) {
+  draw_set_color(c_black);
+  draw_text_transformed(400, 150, "You win!", 5, 5, -20);
+  draw_text_transformed(200, 400, "Score: " + string(timer), 3, 3, 00);
+  draw_text_transformed(200, 550, "Press space to continue", 2, 2, -20);
+}
 </string>
           </argument>
         </arguments>

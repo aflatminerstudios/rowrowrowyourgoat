@@ -65,8 +65,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTestRoom</room>
-    <room>rooms\roomShaderTest</room>
     <room>rooms\roomTitle</room>
+    <room>rooms\roomShaderTest</room>
     <room>rooms\roomCredits</room>
   </rooms>
   <help>
