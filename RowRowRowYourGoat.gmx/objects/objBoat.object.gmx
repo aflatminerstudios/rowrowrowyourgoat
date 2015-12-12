@@ -28,15 +28,15 @@
             <string>///Setup base variables
 
 /// For movement
-maxForward = 20;
-maxTurn = 10;
+maxForward = 8;
+maxTurn = 6;
 
-maxSpeed = 25;
-maxTurnSpeed = 20;
+maxSpeed = 12;
+maxTurnSpeed = 8;
 
-numFrames = 30;
+numFrames = 60;
 
-decelPct = 0.7;
+decelPct = 0.6;
 accelPct = 1 - decelPct;
 
 accelFrames = numFrames * accelPct;
@@ -55,11 +55,15 @@ curFrame = numFrames + 1;
 curForward = 0;
 curTurn = 0;
 
-///Frr turn direction
+///For turn direction
 dir = 1;
+reachedDir = false;
+
 
 ///Set initial direction
-direction = 90;
+direction = 0;
+
+image_speed = 0;
 
 </string>
           </argument>
@@ -85,18 +89,20 @@ direction = 90;
             <kind>1</kind>
             <string>///Check for strokes
 
-if (speed == 0 &amp;&amp; scrCheckLeftButton()) {
+if ((curFrame &gt; accelFrames || curFrame &gt; numFrames) &amp;&amp; scrCheckLeftButton()) {
   //curForward = maxForward;
  // curTurn = maxTurn; 
   curFrame = 0;
   dir = 1;
+  reachedDir = false;
 }
 
-if (speed == 0 &amp;&amp; scrCheckRightButton()) {
+if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckRightButton()) {
 //  curForward = maxForward;
 //  curTurn = -1 * maxTurn; 
   curFrame = 0;
   dir = -1;
+  reachedDir = false;  
 }
 </string>
           </argument>
@@ -120,29 +126,47 @@ if (speed == 0 &amp;&amp; scrCheckRightButton()) {
             <kind>1</kind>
             <string>///Movement
 
-if (curFrame &lt; accelFrames) {
+if (curFrame &lt; accelFrames) {  
   speed = curForward;
   direction += curTurn;
   
   curForward += moveAccel;
   curTurn += turnAccel * dir;
+
+ //If in middle of turn, turn harder  
+ if (sign(curTurn) != sign(dir)) {
+  curTurn += turnAccel * dir;
+ }
   
   curFrame += 1;
-  show_debug_message(string(curForward) + " " + string(curFrame));
-} else if (curFrame &lt; numFrames) {
+} else if (speed &gt; 0) {
   speed = curForward;  
   direction += curTurn;
   
   curForward -= moveDecel;
-
-  curTurn -= turnDecel * dir;
+  
+  if (sign(curTurn) == sign(dir)) {
+    reachedDir = true;
+  }
+  
+  if (!reachedDir || sign(curTurn) == sign(dir)) {
+    curTurn -= turnDecel * dir;
+  } else {
+    curTurn = 0;
+  }
   
   curFrame += 1;
-  show_debug_message(string(curForward) + " " + string(curFrame));
+
 } else {
   curForward = 0;
   speed = 0;
   curTurn = 0;
+}
+
+if (curForward &gt; maxSpeed) {
+  curForward = maxSpeed;
+} else if (abs(curTurn) &gt; maxTurnSpeed) {
+  curTurn = maxTurnSpeed * sign(curTurn);
 }
 </string>
           </argument>
@@ -164,9 +188,55 @@ if (curFrame &lt; accelFrames) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Facing
+            <string>///Sprite Facing
+/*
+{image_index=0}//up
+{image_index=1}//up-left
+{image_index=2}//left
+{image_index=3}//down-left
+{image_index=4}//down
+{image_index=5}//down-right
+{image_index=6}//right
+{image_index=7}//right-up
+*/
+/*
+if direction &gt;22 &amp;&amp; direction &lt;67 {image_index=7}//right-up
+if direction &gt;66 &amp;&amp; direction &lt;112 {image_index=0}//up
+if direction &gt;111 &amp;&amp; direction &lt;157 {image_index=1}//up-left
+if direction &gt;156 &amp;&amp; direction &lt;202 {image_index=2}//left
+if direction &gt;201 &amp;&amp; direction &lt;247 {image_index=3}//down-left
+if direction &gt;246 &amp;&amp; direction &lt;292 {image_index=4}//down
+if direction &gt;291 &amp;&amp; direction &lt;337 {image_index=5}//down-right
+if direction &lt;23 or direction &gt;336 {image_index=6}//right
+*/
 
-image_angle = direction + 90;
+image_angle = direction - 90;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Screen edges
+
+if (x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0) {
+  x = 640;
+  y = 360;
+}
 </string>
           </argument>
         </arguments>

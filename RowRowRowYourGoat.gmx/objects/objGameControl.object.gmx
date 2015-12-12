@@ -25,14 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize level variables
+            <string>///Start timer, CHANGE LATER?
 
-timer = 0;
-
-
-//Keeps track of which goal to hit next
-nextGoal = 1;
-
+alarm[0] = room_speed;
 </string>
           </argument>
         </arguments>
@@ -53,9 +48,14 @@ nextGoal = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Start timer, CHANGE LATER?
+            <string>///Initialize variables
 
-alarm[0] = room_speed;
+timer = 0;
+
+
+//Keeps track of which goal to hit next
+global.nextGoal = 1;
+
 </string>
           </argument>
         </arguments>

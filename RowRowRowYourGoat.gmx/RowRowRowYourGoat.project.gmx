@@ -16,6 +16,7 @@
       <sprite>sprites\sprShoreRight</sprite>
       <sprite>sprites\sprShoreLeft</sprite>
     </sprites>
+    <sprite>sprites\sprCheckpoint</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -54,6 +55,7 @@
     <object>objects\objGameControl</object>
     <object>objects\objShoreLeft</object>
     <object>objects\objShoreRight</object>
+    <object>objects\objCheckpoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTestRoom</room>
