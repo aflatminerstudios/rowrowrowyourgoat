@@ -73,14 +73,14 @@ direction = 90;
             <kind>1</kind>
             <string>///Check for strokes
 
-if (alarm[0] &lt;= 0 &amp;&amp; scrCheckLeftButton()) {
+if (speed == 0 &amp;&amp; scrCheckLeftButton()) {
   curForward = maxForward;
   curTurn = maxTurn; 
   curFrame = 0;
   dir = 1;
 }
 
-if (alarm[1] &lt;= 0 &amp;&amp; scrCheckRightButton()) {
+if (speed == 0 &amp;&amp; scrCheckRightButton()) {
   curForward = maxForward;
   curTurn = -1 * maxTurn; 
   curFrame = 0;

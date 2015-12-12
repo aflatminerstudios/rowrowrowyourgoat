@@ -39,6 +39,9 @@
     </objects>
     <object>objects\objEnemy</object>
     <object>objects\objObstacle</object>
+    <objects name="TitleScreen">
+      <object>objects\objTitleControl</object>
+    </objects>
     <object>objects\objCollectible</object>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>

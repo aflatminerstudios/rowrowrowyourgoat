@@ -3,7 +3,7 @@
 player = argument0;
 object = argument1;
 
-show_message("Hooray! You collected object " + string(object.id));
+///show_message("Hooray! You collected object " + string(object.id));
 
 //Destroy collectable
 with (object) {
