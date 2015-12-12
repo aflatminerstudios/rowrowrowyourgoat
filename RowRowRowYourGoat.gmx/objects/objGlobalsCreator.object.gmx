@@ -28,6 +28,8 @@
             <string>///Initializes global variables at beginnig of game only
 
 global.nextLevel = 1;
+
+global.totalScore = 0;
 </string>
           </argument>
         </arguments>

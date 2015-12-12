@@ -28,13 +28,25 @@
             <string>///Setup base variables
 
 /// For movement
-maxForward = 30;
+maxForward = 20;
 maxTurn = 10;
 
-numFrames = 20;
+maxSpeed = 25;
+maxTurnSpeed = 20;
 
-moveDecel = maxForward / numFrames;
-turnDecel = maxTurn / numFrames;
+numFrames = 30;
+
+decelPct = 0.7;
+accelPct = 1 - decelPct;
+
+accelFrames = numFrames * accelPct;
+decelFrames = numFrames - accelFrames;
+
+moveAccel = maxForward / accelFrames;
+turnAccel = maxTurn / accelFrames;
+
+moveDecel = maxForward / decelFrames;
+turnDecel = maxTurn / decelFrames;
 
 //Which frame of movement are we on
 curFrame = numFrames + 1;
@@ -74,15 +86,15 @@ direction = 90;
             <string>///Check for strokes
 
 if (speed == 0 &amp;&amp; scrCheckLeftButton()) {
-  curForward = maxForward;
-  curTurn = maxTurn; 
+  //curForward = maxForward;
+ // curTurn = maxTurn; 
   curFrame = 0;
   dir = 1;
 }
 
 if (speed == 0 &amp;&amp; scrCheckRightButton()) {
-  curForward = maxForward;
-  curTurn = -1 * maxTurn; 
+//  curForward = maxForward;
+//  curTurn = -1 * maxTurn; 
   curFrame = 0;
   dir = -1;
 }
@@ -108,7 +120,16 @@ if (speed == 0 &amp;&amp; scrCheckRightButton()) {
             <kind>1</kind>
             <string>///Movement
 
-if (curFrame &lt; numFrames) {
+if (curFrame &lt; accelFrames) {
+  speed = curForward;
+  direction += curTurn;
+  
+  curForward += moveAccel;
+  curTurn += turnAccel * dir;
+  
+  curFrame += 1;
+  show_debug_message(string(curForward) + " " + string(curFrame));
+} else if (curFrame &lt; numFrames) {
   speed = curForward;  
   direction += curTurn;
   
@@ -117,7 +138,7 @@ if (curFrame &lt; numFrames) {
   curTurn -= turnDecel * dir;
   
   curFrame += 1;
-
+  show_debug_message(string(curForward) + " " + string(curFrame));
 } else {
   curForward = 0;
   speed = 0;
@@ -145,7 +166,7 @@ if (curFrame &lt; numFrames) {
             <kind>1</kind>
             <string>///Facing
 
-image_angle = direction - 90;
+image_angle = direction + 90;
 </string>
           </argument>
         </arguments>
