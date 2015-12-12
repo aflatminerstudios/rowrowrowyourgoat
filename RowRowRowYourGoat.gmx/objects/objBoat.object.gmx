@@ -28,10 +28,10 @@
             <string>///Setup base variables
 
 /// For movement
-maxForward = 5;
+maxForward = 2;
 maxTurn = 2;
 
-maxSpeed = 8;
+maxSpeed = 5;
 maxTurnSpeed = 3;
 
 numFrames = 60;
@@ -67,12 +67,41 @@ reachedDir = false;
 ///Set initial direction
 direction = 0;
 
-image_speed = 0;
-
 
 //Bouncing off an emey?
 bouncing = false;
-
+bounceDir = 0;
+bounceMax = 3;
+bounceSpeed = bounceMax;
+bounceDec = bounceMax;
+bounceStartDir = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Stop bouncing
+bouncing = false;
+direction = bounceStartDir;
+speed = 0;
+curFrame = numFrames + 1;
 </string>
           </argument>
         </arguments>
@@ -103,6 +132,8 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames) &amp;&amp; scrCheckLe
   curFrame = 0;
   dir = 1;
   reachedDir = false;
+  sprite_index = sprRightRow;
+  image_index = 0;
 }
 
 if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckRightButton()) {
@@ -111,6 +142,8 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckR
   curFrame = 0;
   dir = -1;
   reachedDir = false;  
+  sprite_index = sprLeftRow;
+  image_index = 0;
 }
 </string>
           </argument>
@@ -170,6 +203,7 @@ if (!bouncing) {
     curForward = 0;
     speed = 0;
     curTurn = 0;
+    sprite_index = sprBoat;
   }
   
   if (curForward &gt; maxSpeed) {
@@ -220,7 +254,9 @@ if direction &gt;291 &amp;&amp; direction &lt;337 {image_index=5}//down-right
 if direction &lt;23 or direction &gt;336 {image_index=6}//right
 */
 
-image_angle = direction - 90;
+if (!bouncing) {
+  image_angle = direction - 90;
+}
 </string>
           </argument>
         </arguments>
@@ -246,6 +282,32 @@ image_angle = direction - 90;
 if (x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0) {
   x = 640;
   y = 360;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Bounce off enemy
+
+if (bouncing) {
+  direction = bounceDir;
+  speed = max(speed - bounceDec, 0);
 }
 </string>
           </argument>
