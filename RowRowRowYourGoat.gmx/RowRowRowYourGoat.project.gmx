@@ -104,6 +104,7 @@
     <object>objects\objGameoverControl</object>
     <object>objects\objLevelSelecters</object>
     <object>objects\objStrongCurrent</object>
+    <object>objects\objRiverBottom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
@@ -117,6 +118,9 @@
     </rooms>
     <room>rooms\roomGameover</room>
     <room>rooms\roomTemplate</room>
+    <rooms name="Course 1">
+      <room>rooms\roomLevel1</room>
+    </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomShaderTest</room>
     <room>rooms\roomCredits</room>
