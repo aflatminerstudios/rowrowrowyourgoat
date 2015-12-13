@@ -84,7 +84,9 @@ surface_set_target(underwaterSurface);
 shader_set(shaderColoredWater);
 draw_sprite(sprRiverBottom, 0, 640, 360);
 with(objOnTheSurface){
-  // Draw offset shadows
+  var newX = x + 25;
+  var newY = y + 20;
+  draw_sprite_ext(sprite_index, image_index, newX, newY, 1, 1, direction - 90, c_black, 1.0); 
 }
 with(objUnderTheSurface) {
   draw_self();

@@ -84,9 +84,12 @@ waterSpeed = 0.3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create debris maker instance
+            <string>/// Create debris maker and starter debris instances
 
 instance_create(576, 720, objDebrisMaker);
+
+for(var i = 0; i &lt; 10; i++)
+  instance_create(irandom(880) + 200, irandom(720), objDebris);
 </string>
           </argument>
         </arguments>
