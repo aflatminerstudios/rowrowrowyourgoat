@@ -40,6 +40,7 @@
       <sprite>sprites\sprMiddleRockBottom</sprite>
     </sprites>
     <sprite>sprites\sprTimer</sprite>
+    <sprite>sprites\sprStrongCurrent</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -101,6 +102,7 @@
     <object>objects\objExplosion</object>
     <object>objects\objGameoverControl</object>
     <object>objects\objLevelSelecters</object>
+    <object>objects\objStrongCurrent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
