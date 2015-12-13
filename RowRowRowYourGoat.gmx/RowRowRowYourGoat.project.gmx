@@ -63,6 +63,7 @@
     <object>objects\objCheckpoint</object>
     <object>objects\objExplosion</object>
     <object>objects\objGameoverControl</object>
+    <object>objects\objCameraController</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
@@ -75,6 +76,7 @@
     </rooms>
     <room>rooms\roomGameover</room>
     <room>rooms\roomTemplate</room>
+    <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomShaderTest</room>
     <room>rooms\roomCredits</room>
   </rooms>
