@@ -398,6 +398,34 @@ y -= waterSpeed;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objNoShadowObstacle">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Collide with solid objects
+
+//dir = point_direction(other.x, other.y, x, y);
+//move_outside_solid(dir, speed);
+
+//move_bounce_solid(true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="objStrongCurrent">
       <action>
         <libid>1</libid>
@@ -472,11 +500,12 @@ scrCollideWithEnemy(self.id, other.id);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Stop boat movement
+            <string>///Collide with solid objects
 
-x = xprevious;
-y = yprevious;
+//dir = point_direction(other.x, other.y, x, y);
+//move_outside_solid(dir, 10);
 
+//move_bounce_solid(true);
 </string>
           </argument>
         </arguments>

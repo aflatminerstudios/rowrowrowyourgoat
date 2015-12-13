@@ -74,6 +74,7 @@
     <instance objName="objStrongCurrent" x="864" y="352" name="inst_B25C35EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStrongCurrent" x="864" y="384" name="inst_4FBB7D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStrongCurrent" x="832" y="384" name="inst_4182453C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="416" y="256" name="inst_C2E29489" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
