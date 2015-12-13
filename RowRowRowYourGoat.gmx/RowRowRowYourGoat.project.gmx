@@ -76,6 +76,7 @@
       <object>objects\objUnderTheSurface</object>
       <object>objects\objOnTheSurface</object>
       <object>objects\objDebris</object>
+      <object>objects\objDebrisMaker</object>
     </objects>
     <object>objects\objBoat</object>
     <objects name="Placeholders">
