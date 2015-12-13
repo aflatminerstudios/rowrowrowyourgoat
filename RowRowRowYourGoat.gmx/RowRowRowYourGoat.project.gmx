@@ -67,7 +67,8 @@
       <object>objects\objPlaceholderObstacle</object>
       <object>objects\objPlaceholderCollectible</object>
     </objects>
-    <objects name="TitleScreen">
+    <objects name="AltScreens">
+      <object>objects\objCreditsControl</object>
       <object>objects\objTitleControl</object>
     </objects>
     <object>objects\objGlobalsCreator</object>

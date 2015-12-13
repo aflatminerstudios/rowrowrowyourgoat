@@ -25,18 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Go to other room
+            <string>///goto title screen on space press
 
 if (keyboard_check_pressed(vk_space)) {
-  room_goto(roomTestRoom1);
-}
-
-if (keyboard_check_pressed(vk_tab)) {
-  room_goto(roomLevelSelect);
-}
-
-if (keyboard_check_pressed(ord('C'))) {
-  room_goto(roomCredits);
+  room_goto(roomTitle);
 }
 </string>
           </argument>
@@ -60,7 +52,8 @@ if (keyboard_check_pressed(ord('C'))) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(100, 300, "Row Row Row Your Goat");
+            <string>draw_text(100, 300, "Credits screen");
+draw_text(400, 300, "Press space to go back to title screen");
 </string>
           </argument>
         </arguments>
