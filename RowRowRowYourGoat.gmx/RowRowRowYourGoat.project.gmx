@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sndTitle</sound>
+    <sound>sound\sndIngame</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Placeholders">

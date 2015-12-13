@@ -28,6 +28,7 @@
             <string>///Check for space
 
 if (keyboard_check_pressed(vk_space)) {
+  audio_stop_sound(sndIngame);
   room_goto(roomTitle);
 }
 </string>
