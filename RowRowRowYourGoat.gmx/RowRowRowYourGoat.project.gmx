@@ -34,12 +34,10 @@
       <sprite>sprites\sprLongLogTop</sprite>
       <sprite>sprites\sprShortLogBottom</sprite>
       <sprite>sprites\sprShortLogTop</sprite>
-    </sprites>
-    <sprites name="Enemies">
-      <sprite>sprites\sprMiddleRockBottom</sprite>
       <sprite>sprites\sprMiddleRockTop</sprite>
       <sprite>sprites\sprShoreRockTop</sprite>
       <sprite>sprites\sprShoreRockBottom</sprite>
+      <sprite>sprites\sprMiddleRockBottom</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -84,6 +82,8 @@
       <object>objects\objLongLogTop</object>
       <object>objects\objMiddleRockBottom</object>
       <object>objects\objMiddleRockTop</object>
+      <object>objects\objShoreRockTop</object>
+      <object>objects\objShoreRockBottom</object>
     </objects>
     <object>objects\objGameControl</object>
     <objects name="Collectibles">
