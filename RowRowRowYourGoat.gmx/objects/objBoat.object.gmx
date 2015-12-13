@@ -286,7 +286,23 @@ if (!bouncing) {
   } else if (abs(curTurn) &gt; maxTurnSpeed) {
     curTurn = maxTurnSpeed * sign(curTurn);
   }
+
+  ///Try moving and make sure you're not colliding with something
+  shadowed = place_meeting(x + hspeed, y + vspeed, objObstacle);
+  unshadowed = place_meeting(x + hspeed, y + vspeed, objNoShadowObstacle);
+  if (!shadowed &amp;&amp; !unshadowed) {
+    x += hspeed;
+    y += vspeed;
+  }
+  
+    
+  speed = 0;
+
 }
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -482,10 +498,16 @@ speed = other.strength;
             <kind>1</kind>
             <string>///Collide with solid objects
 
-//dir = point_direction(other.x, other.y, x, y);
-//move_outside_solid(dir, speed);
+
+//  move_outside_solid(point_direction(x,y,x-hspeed,y-vspeed),point_distance(x,y,x-hspeed,y-vspeed) + speed);
 
 //move_bounce_solid(true);
+
+var d = point_direction(x, y, 640, 360);
+
+x += lengthdir_x(curForward, d);
+y += lengthdir_y(curForward, d);
+
 </string>
           </argument>
         </arguments>
