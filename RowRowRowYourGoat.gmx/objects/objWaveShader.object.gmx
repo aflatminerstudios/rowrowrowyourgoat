@@ -84,9 +84,13 @@ surface_set_target(underwaterSurface);
 shader_set(shaderColoredWater);
 draw_sprite(sprRiverBottom, 0, 640, 360);
 with(objOnTheSurface){
-  var newX = x + 25;
-  var newY = y + 20;
-  draw_sprite_ext(sprite_index, image_index, newX, newY, 1, 1, direction - 90, c_black, 1.0); 
+  var newX = x + 50;//25;
+  var newY = y + 50;//20;
+  var angle = direction;
+  if(object_index == objBoat)
+    angle = angle - 90;
+  
+  draw_sprite_ext(sprite_index, image_index, newX, newY, 1, 1, angle, c_black, 0.9); 
 }
 with(objUnderTheSurface) {
   draw_self();

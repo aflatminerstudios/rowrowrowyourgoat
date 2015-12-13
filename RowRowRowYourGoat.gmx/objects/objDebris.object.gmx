@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Set basic variables
 
-sprite_index = choose(sprDebris1, sprDebris2);
-
+sprite_index = choose(sprDebris1, sprDebris2, sprDebris2);
+image_angle = irandom(360);
 
 waterSpeed = objGameControl.waterSpeed;
 </string>
@@ -59,6 +59,31 @@ var wiggleY = (random(0.5) - 0.25) + -1.6*waterSpeed;
 x += wiggleX;
 y += wiggleY;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Destroy if too far outside the room
+if(y &lt; -50 || y &gt; room_height + 50)
+  instance_destroy();
 </string>
           </argument>
         </arguments>
