@@ -52,10 +52,10 @@
   </views>
   <instances>
     <instance objName="objGameControl" x="0" y="0" name="inst_063BE119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="640" y="-16" name="inst_28179DF3" locked="0" code="" scaleX="40.25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="1296" y="352" name="inst_43FF7CFF" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="640" y="736" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="-16" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="640" y="-48" name="inst_28179DF3" locked="0" code="" scaleX="40.25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="1344" y="352" name="inst_43FF7CFF" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="656" y="768" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="-64" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -113,6 +113,7 @@
       <object>objects\objCollectible</object>
       <object>objects\objObstacle</object>
       <object>objects\objEnemy</object>
+      <object>objects\objNoShadowObstacle</object>
     </objects>
     <object>objects\objExplosion</object>
     <object>objects\objGameoverControl</object>
