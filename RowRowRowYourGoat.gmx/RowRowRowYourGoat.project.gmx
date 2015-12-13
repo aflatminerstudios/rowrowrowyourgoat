@@ -38,6 +38,12 @@
       <sprite>sprites\sprShoreRockBottom</sprite>
       <sprite>sprites\sprMiddleRockBottom</sprite>
     </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\sprBearIdleAbove</sprite>
+      <sprite>sprites\sprBearIdleBelow</sprite>
+      <sprite>sprites\sprBearSwipeAbove</sprite>
+      <sprite>sprites\sprBearSwipeBelow</sprite>
+    </sprites>
     <sprite>sprites\sprTimer</sprite>
     <sprite>sprites\sprStrongCurrent</sprite>
     <sprites name="Checkpoints">
@@ -116,6 +122,10 @@
       <object>objects\objEnemy</object>
       <object>objects\objNoShadowObstacle</object>
     </objects>
+    <objects name="Enemies">
+      <object>objects\objBearAbove</object>
+      <object>objects\objBearBelow</object>
+    </objects>
     <object>objects\objExplosion</object>
     <object>objects\objLevelSelecters</object>
     <object>objects\objStrongCurrent</object>
@@ -138,6 +148,8 @@
       <room>rooms\roomC1L1</room>
       <room>rooms\roomC1L2</room>
       <room>rooms\roomC1L3</room>
+      <room>rooms\roomC1L4</room>
+      <room>rooms\roomC1L5</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomCredits</room>

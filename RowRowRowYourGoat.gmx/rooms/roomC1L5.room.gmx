@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>720</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -58,15 +58,15 @@
     <instance objName="objPlaceholderObstacle" x="-48" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
     <instance objName="objShoreRight" x="896" y="0" name="inst_463F95E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShoreLeft" x="0" y="0" name="inst_24E60EF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBoat" x="656" y="400" name="inst_844C7624" locked="0" code="direction = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objShortLogTop" x="416" y="128" name="inst_6A33D62A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objShortLogTop" x="752" y="128" name="inst_57E7E576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="480" y="320" name="inst_953A6D9C" locked="0" code="number = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="912" y="624" name="inst_B151836E" locked="0" code="number = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="416" y="560" name="inst_4A3074C4" locked="0" code="number = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="576" y="208" name="inst_A7CFECA4" locked="0" code="number = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="576" y="48" name="inst_32091D80" locked="0" code="number = 5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLongLogTop" x="864" y="352" name="inst_FFBCA07B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="75"/>
+    <instance objName="objBoat" x="656" y="400" name="inst_844C7624" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBearAbove" x="888" y="472" name="inst_6C69DA9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShortLogTop" x="448" y="280" name="inst_3C4D59D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="objLongLogTop" x="304" y="576" name="inst_ABD3FDE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="688" y="160" name="inst_C6694737" locked="0" code="number = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="384" y="80" name="inst_E3EEEE61" locked="0" code="number = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="592" y="624" name="inst_EE7F9C24" locked="0" code="number = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="880" y="624" name="inst_D2F82714" locked="0" code="number = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="352" y="256" name="inst_9915A230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
