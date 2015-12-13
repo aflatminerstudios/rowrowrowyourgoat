@@ -321,10 +321,10 @@ if (!bouncing) {
             <kind>1</kind>
             <string>///Screen edges
 
-if (x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0) {
-  x = 640;
-  y = 360;
-}
+//if (x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0) {
+//  x = 640;
+//  y = 360;
+//}
 </string>
           </argument>
         </arguments>
@@ -476,6 +476,7 @@ scrCollideWithEnemy(self.id, other.id);
 
 x = xprevious;
 y = yprevious;
+
 </string>
           </argument>
         </arguments>
