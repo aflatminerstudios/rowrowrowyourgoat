@@ -51,7 +51,7 @@ alarm[0] = room_speed;
             <string>///Initialize variables
 
 timer = 0;
-
+timerOn = true;
 
 //Keeps track of which goal to hit next
 global.nextGoal = 1;
@@ -93,6 +93,32 @@ numCheckpoints = instance_number(objCheckpoint);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Turns timer back on
+
+timerOn = true;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -113,9 +139,15 @@ numCheckpoints = instance_number(objCheckpoint);
             <string>///Increment timer by 1 every second
 
 if (!levelOver) {
-  timer += 1;
+  
+  if (timerOn) {
+    timer += 1;
+  }
+  
   alarm[0] = room_speed;
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -216,7 +248,9 @@ if (!levelOver) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (levelOver) {
+            <string>///Level over messages
+
+if (levelOver) {
   draw_set_color(c_black);
   draw_text_transformed(400, 150, "You win!", 5, 5, -20);
   draw_text_transformed(200, 400, "Score: " + string(timer), 3, 3, 00);

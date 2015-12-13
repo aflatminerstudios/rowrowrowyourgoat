@@ -61,6 +61,7 @@
     <instance objName="objPlaceholderEnemy" x="320" y="480" name="inst_2F42AD8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderEnemy" x="832" y="96" name="inst_8E9DD61A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderEnemy" x="800" y="512" name="inst_C03DD2FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="704" y="320" name="inst_28AC17B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

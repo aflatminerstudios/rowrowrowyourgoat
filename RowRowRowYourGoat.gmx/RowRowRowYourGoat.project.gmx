@@ -39,6 +39,7 @@
       <sprite>sprites\sprShoreRockBottom</sprite>
       <sprite>sprites\sprMiddleRockBottom</sprite>
     </sprites>
+    <sprite>sprites\sprTimer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -64,8 +65,8 @@
     <object>objects\objBoat</object>
     <objects name="Placeholders">
       <object>objects\objPlaceholderEnemy</object>
-      <object>objects\objPlaceholderObstacle</object>
       <object>objects\objPlaceholderCollectible</object>
+      <object>objects\objPlaceholderObstacle</object>
     </objects>
     <objects name="AltScreens">
       <object>objects\objCreditsControl</object>
@@ -90,6 +91,7 @@
     <object>objects\objGameControl</object>
     <objects name="Collectibles">
       <object>objects\objCheckpoint</object>
+      <object>objects\objTimer</object>
     </objects>
     <objects name="Parents">
       <object>objects\objCollectible</object>
