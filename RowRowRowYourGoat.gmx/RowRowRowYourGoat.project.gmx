@@ -130,6 +130,7 @@
       <object>objects\objBearBelow</object>
     </objects>
     <object>objects\objExplosion</object>
+    <object>objects\objCourseSelectors</object>
     <object>objects\objLevelSelecters</object>
     <object>objects\objStrongCurrent</object>
     <object>objects\objRiverBottom</object>
@@ -157,6 +158,7 @@
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomCredits</room>
     <room>rooms\roomInstructions</room>
+    <room>rooms\roomCourseSelect</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

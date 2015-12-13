@@ -28,8 +28,7 @@
             <string>///Go to other room
 
 if (keyboard_check_pressed(vk_space)) {
-  global.course = 1;
-  room_goto(roomC1L1);
+  room_goto(roomCourseSelect);
 }
 
 if (keyboard_check_pressed(vk_tab)) {
