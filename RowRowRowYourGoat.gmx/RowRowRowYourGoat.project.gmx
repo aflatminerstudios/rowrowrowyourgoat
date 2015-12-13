@@ -74,14 +74,17 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
+    <shader type="GLSLES">shaders\shaderWavesShallow.shader</shader>
     <shader type="GLSLES">shaders\shaderColoredWater.shader</shader>
   </shaders>
   <objects name="objects">
     <objects name="Water/Underwater">
       <object>objects\objWaveShader</object>
-      <object>objects\objUnderTheSurface</object>
       <object>objects\objOnTheSurface</object>
+      <object>objects\objJustBelowSurface</object>
+      <object>objects\objUnderTheSurface</object>
       <object>objects\objDebris</object>
+      <object>objects\objSurfaceDebris</object>
       <object>objects\objDebrisMaker</object>
     </objects>
     <object>objects\objBoat</object>

@@ -88,8 +88,10 @@ waterSpeed = 0.3;
 
 instance_create(576, 720, objDebrisMaker);
 
-for(var i = 0; i &lt; 10; i++)
-  instance_create(irandom(880) + 200, irandom(720), objDebris);
+for(var i = 0; i &lt; 30; i++) {
+  var debrisType = choose(objDebris, objSurfaceDebris);
+  instance_create(irandom(680) + 300, irandom(720), debrisType);
+}
 </string>
           </argument>
         </arguments>

@@ -30,7 +30,7 @@
 leftEdge = 200;
 rightEdge = 1080;
 
-averageFrequency = 2.0; // Seconds
+averageFrequency = 0.5; // Seconds
 
 
 // Start making debris
@@ -60,7 +60,9 @@ alarm[0] = 1;
             <string>/// Add debris to field
 
 
-instance_create(irandom(rightEdge-leftEdge)+leftEdge, y, objDebris);
+var objectType = choose(objDebris, objSurfaceDebris);
+
+instance_create(irandom(rightEdge-leftEdge)+leftEdge, y, objectType);
 
 alarm[0] = averageFrequency*room_speed + irandom(room_speed / 2);
 

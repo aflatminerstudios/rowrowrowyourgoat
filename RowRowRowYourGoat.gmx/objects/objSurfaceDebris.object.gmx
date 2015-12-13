@@ -3,9 +3,9 @@
   <spriteName>sprDebris1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>100</depth>
   <persistent>0</persistent>
-  <parentName>objUnderTheSurface</parentName>
+  <parentName>objOnTheSurface</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -31,7 +31,7 @@ sprite_index = choose(sprDebris1, sprDebris2, sprDebris2);
 image_angle = irandom(360);
 
 waterSpeed = objGameControl.waterSpeed;
-averageSpin = choose(0.2, 0.05, -0.3, -0.1, 0.9, -0.8); // degrees per second
+averageSpin = choose(0.2, 0.05, -0.3, -0.1); // degrees per second
 </string>
           </argument>
         </arguments>
@@ -83,7 +83,7 @@ y += wiggleY;
             <kind>1</kind>
             <string>/// Rotate/flip while in the water
 
-image_angle += irandom(6) - 3 + averageSpin;
+image_angle += irandom(2) - 1 + averageSpin;
 
 
 </string>
