@@ -29,6 +29,18 @@
       <sprite>sprites\sprLevel1</sprite>
       <sprite>sprites\sprLevel5</sprite>
     </sprites>
+    <sprites name="Obstacles">
+      <sprite>sprites\sprLongLogBottom</sprite>
+      <sprite>sprites\sprLongLogTop</sprite>
+      <sprite>sprites\sprShortLogBottom</sprite>
+      <sprite>sprites\sprShortLogTop</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\sprMiddleRockBottom</sprite>
+      <sprite>sprites\sprMiddleRockTop</sprite>
+      <sprite>sprites\sprShoreRockTop</sprite>
+      <sprite>sprites\sprShoreRockBottom</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -57,21 +69,31 @@
       <object>objects\objPlaceholderObstacle</object>
       <object>objects\objPlaceholderCollectible</object>
     </objects>
-    <object>objects\objEnemy</object>
-    <object>objects\objObstacle</object>
     <objects name="TitleScreen">
       <object>objects\objTitleControl</object>
     </objects>
-    <object>objects\objCollectible</object>
     <object>objects\objGlobalsCreator</object>
+    <objects name="Solid Ground">
+      <object>objects\objShoreRight</object>
+      <object>objects\objShoreLeft</object>
+    </objects>
     <objects name="Obstacles">
-      <objects name="Solid Ground">
-        <object>objects\objShoreRight</object>
-        <object>objects\objShoreLeft</object>
-      </objects>
+      <object>objects\objShortLogTop</object>
+      <object>objects\objShortLogBottom</object>
+      <object>objects\objLongLogBottom</object>
+      <object>objects\objLongLogTop</object>
+      <object>objects\objMiddleRockBottom</object>
+      <object>objects\objMiddleRockTop</object>
     </objects>
     <object>objects\objGameControl</object>
-    <object>objects\objCheckpoint</object>
+    <objects name="Collectibles">
+      <object>objects\objCheckpoint</object>
+    </objects>
+    <objects name="Parents">
+      <object>objects\objCollectible</object>
+      <object>objects\objObstacle</object>
+      <object>objects\objEnemy</object>
+    </objects>
     <object>objects\objExplosion</object>
     <object>objects\objGameoverControl</object>
     <object>objects\objLevelSelecters</object>
