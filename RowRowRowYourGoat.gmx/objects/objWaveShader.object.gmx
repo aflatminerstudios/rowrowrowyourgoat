@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Set up variables
 steps = 0;
-justBelowWaterSurface = surface_create(1024, 1024);
-underwaterSurface = surface_create(1024, 1024);
+justBelowWaterSurface = surface_create(2048, 1024);
+underwaterSurface = surface_create(2048, 1024);
 
 surface_set_target(justBelowWaterSurface);
 draw_clear_alpha(c_black, 0);
