@@ -29,7 +29,7 @@
 
 if (keyboard_check_pressed(vk_space)) {
   global.course = 1;
-  room_goto(roomLevel1);
+  room_goto(roomC1L1);
 }
 
 if (keyboard_check_pressed(vk_tab)) {

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>bottom = instance_create(x, y, objShortLogBottom);
+bottom.image_angle = image_angle;
 </string>
           </argument>
         </arguments>
