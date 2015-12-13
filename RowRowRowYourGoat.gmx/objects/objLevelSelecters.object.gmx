@@ -82,6 +82,9 @@ global.course = 0;
 global.nextLevel = levelNumber;
 
 room_goto(asset_get_index("roomTestRoom" + string(levelNumber)));
+
+
+audio_stop_sound(sndTitle);
 </string>
           </argument>
         </arguments>

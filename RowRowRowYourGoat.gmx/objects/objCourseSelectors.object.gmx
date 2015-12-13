@@ -82,6 +82,8 @@ global.course = courseNumber;
 global.nextLevel = 1;
 
 room_goto(global.levelList[global.course, global.nextLevel])
+
+audio_stop_sound(sndTitle);
 </string>
           </argument>
         </arguments>
