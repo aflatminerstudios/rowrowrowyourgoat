@@ -78,10 +78,10 @@ sprite_index = asset_get_index("sprLevel" + string(levelNumber));
             <string>///If left button pressed, go to level
 
 
-global.course = 0;
+global.course = 3;
 global.nextLevel = levelNumber;
 
-room_goto(asset_get_index("roomTestRoom" + string(levelNumber)));
+room_goto(asset_get_index("roomC2L" + string(levelNumber)));
 
 
 audio_stop_sound(sndTitle);
