@@ -86,7 +86,6 @@ surface_reset_target();
 
 // Draw onto the temp surface first
 surface_set_target(underwaterSurface);
-shader_set(shaderColoredWater);
 draw_sprite(sprRiverBottom, 0, 640, 360);
 
 // Draw shadows
@@ -105,12 +104,10 @@ with(objOnTheSurface){
   draw_sprite_ext(sprite_index, image_index, newX, newY, 1, 1, angle, c_black, 0.9); 
 }
 
-
 // Draw deep objects
 with(objUnderTheSurface) {
   draw_self();
 }
-shader_reset();
 surface_reset_target();
 
 

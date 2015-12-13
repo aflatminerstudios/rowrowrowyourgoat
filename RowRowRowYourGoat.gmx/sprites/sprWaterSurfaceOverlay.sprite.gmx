@@ -20,6 +20,6 @@
   <width>1280</width>
   <height>760</height>
   <frames>
-    <frame index="0">images\sprRiverBottom_0.png</frame>
+    <frame index="0">images\sprWaterSurfaceOverlay_0.png</frame>
   </frames>
 </sprite>
