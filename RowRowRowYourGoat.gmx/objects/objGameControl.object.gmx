@@ -88,6 +88,12 @@ waterSpeed = 0.3;
             <kind>1</kind>
             <string>///Counts checkpoints
 numCheckpoints = instance_number(objCheckpoint);
+
+with (objCheckpoint) {
+  if (number == 1) {
+    sprite_index = sprCurrentCheckpoint;
+  }
+}
 </string>
           </argument>
         </arguments>
@@ -171,7 +177,7 @@ if (!levelOver) {
           <argument>
             <kind>1</kind>
             <string>///Sees if all checkpoints have been found
-if (instance_number(objCheckpoint) == 0) {
+if (instance_number(objCheckpoint) &lt; global.nextGoal) {
   levelOver = true;
 }
 </string>

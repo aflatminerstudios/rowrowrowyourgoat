@@ -197,7 +197,7 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckR
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>objBoat</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>

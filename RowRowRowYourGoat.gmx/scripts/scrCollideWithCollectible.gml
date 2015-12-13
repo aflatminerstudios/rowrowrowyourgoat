@@ -5,9 +5,22 @@ object = argument1;
 
 if (object.object_index == objCheckpoint) {
   if (object.number == global.nextGoal) {
-    global.nextGoal++
+    //Advance to next goal
+    global.nextGoal++;
+    
+    with (objCheckpoint) {
+      if (number == global.nextGoal) {
+        if (instance_number(objCheckpoint) == number) {
+          sprite_index = sprFinalCheckpoint;
+        } else {
+          sprite_index = sprCurrentCheckpoint;
+        }
+      }
+    }
+    
     with (object) {
-      alarm[0] = 1;
+      //alarm[0] = 1;
+      sprite_index = sprPastCheckpoint;
     }
   }  
 } else if (object.object_index == objTimer) {

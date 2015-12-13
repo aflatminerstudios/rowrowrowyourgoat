@@ -15,7 +15,6 @@
       <sprite>sprites\sprShoreRight</sprite>
       <sprite>sprites\sprShoreLeft</sprite>
     </sprites>
-    <sprite>sprites\sprCheckpoint</sprite>
     <sprite>sprites\sprExplosion</sprite>
     <sprites name="Boat">
       <sprite>sprites\sprLeftRow</sprite>
@@ -41,6 +40,12 @@
     </sprites>
     <sprite>sprites\sprTimer</sprite>
     <sprite>sprites\sprStrongCurrent</sprite>
+    <sprites name="Checkpoints">
+      <sprite>sprites\sprCheckpoint</sprite>
+      <sprite>sprites\sprCurrentCheckpoint</sprite>
+      <sprite>sprites\sprFinalCheckpoint</sprite>
+      <sprite>sprites\sprPastCheckpoint</sprite>
+    </sprites>
     <sprite>sprites\sprRiverBottom</sprite>
   </sprites>
   <backgrounds name="background">
@@ -76,6 +81,7 @@
       <object>objects\objInstructionsControl</object>
     </objects>
     <object>objects\objGlobalsCreator</object>
+    <object>objects\objGameControl</object>
     <objects name="Solid Ground">
       <object>objects\objShoreRight</object>
       <object>objects\objShoreLeft</object>
@@ -90,7 +96,6 @@
       <object>objects\objShoreRockTop</object>
       <object>objects\objShoreRockBottom</object>
     </objects>
-    <object>objects\objGameControl</object>
     <objects name="Collectibles">
       <object>objects\objCheckpoint</object>
       <object>objects\objTimer</object>
