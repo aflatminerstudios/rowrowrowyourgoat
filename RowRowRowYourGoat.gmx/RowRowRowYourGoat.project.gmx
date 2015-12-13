@@ -69,7 +69,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
-    <background>background\bgRiverBottom</background>
+    <background>background\bgTitleScreen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

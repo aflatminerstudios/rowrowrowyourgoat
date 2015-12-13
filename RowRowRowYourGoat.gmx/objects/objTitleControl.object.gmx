@@ -50,7 +50,11 @@
             <kind>1</kind>
             <string>///Go to other room
 
-if (keyboard_check_pressed(vk_space)) {
+if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(vk_left)) {
+  room_goto(roomCourseSelect);
+}
+
+if(mouse_check_button_pressed(mb_left)) {  // Tap
   room_goto(roomCourseSelect);
 }
 
@@ -84,6 +88,7 @@ if (keyboard_check_pressed(ord('C'))) {
           <argument>
             <kind>1</kind>
             <string>draw_text(100, 300, "Row Row Row Your Goat");
+draw_text(100, 350, "Press -&gt; to start!");
 </string>
           </argument>
         </arguments>

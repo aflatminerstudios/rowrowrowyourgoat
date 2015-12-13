@@ -82,7 +82,7 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw deep water distortion (river bottom)
+            <string>/// Draw deep water distortion &amp; shadows (river bottom)
 
 // Draw onto the temp surface first
 surface_set_target(underwaterSurface);
@@ -90,15 +90,15 @@ draw_sprite(sprRiverBottom, 0, 640, 360);
 
 // Draw shadows
 with(objJustBelowSurface){
-  var newX = x + 50;//25;
-  var newY = y + 50;//20;
+  var newX = x + 30;
+  var newY = y + 15;
   var angle = image_angle;
   
   draw_sprite_ext(sprite_index, image_index, newX, newY, 1, 1, angle, c_black, 0.9); 
 }
 with(objOnTheSurface){
-  var newX = x + 50;//25;
-  var newY = y + 50;//20;
+  var newX = x + 30;
+  var newY = y + 15;
   var angle = image_angle;
   
   draw_sprite_ext(sprite_index, image_index, newX, newY, 1, 1, angle, c_black, 0.9); 
