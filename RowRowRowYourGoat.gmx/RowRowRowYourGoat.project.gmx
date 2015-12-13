@@ -22,6 +22,13 @@
       <sprite>sprites\sprBoat</sprite>
       <sprite>sprites\sprRightRow</sprite>
     </sprites>
+    <sprites name="LevelSelect">
+      <sprite>sprites\sprLevel2</sprite>
+      <sprite>sprites\sprLevel3</sprite>
+      <sprite>sprites\sprLevel4</sprite>
+      <sprite>sprites\sprLevel1</sprite>
+      <sprite>sprites\sprLevel5</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -57,18 +64,23 @@
     </objects>
     <object>objects\objCollectible</object>
     <object>objects\objGlobalsCreator</object>
+    <objects name="Obstacles">
+      <objects name="Solid Ground">
+        <object>objects\objShoreRight</object>
+        <object>objects\objShoreLeft</object>
+      </objects>
+    </objects>
     <object>objects\objGameControl</object>
-    <object>objects\objShoreLeft</object>
-    <object>objects\objShoreRight</object>
     <object>objects\objCheckpoint</object>
     <object>objects\objExplosion</object>
     <object>objects\objGameoverControl</object>
-    <object>objects\objCameraController</object>
+    <object>objects\objLevelSelecters</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
+    <room>rooms\roomLevelSelect</room>
     <rooms name="Test Course">
-      <room>rooms\roomTestRoom</room>
+      <room>rooms\roomTestRoom1</room>
       <room>rooms\roomTestRoom2</room>
       <room>rooms\roomTestRoom3</room>
       <room>rooms\roomTestRoom4</room>
