@@ -65,6 +65,7 @@
       <sprite>sprites\sprOverlayCourse1</sprite>
       <sprite>sprites\sprShoreCourse1</sprite>
     </sprites>
+    <sprite>sprites\sprLilypad</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -145,6 +146,7 @@
     <object>objects\objLevelSelecters</object>
     <object>objects\objStrongCurrent</object>
     <object>objects\objRiverBottom</object>
+    <object>objects\objLilypad</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
@@ -165,6 +167,10 @@
       <room>rooms\roomC1L3</room>
       <room>rooms\roomC1L4</room>
       <room>rooms\roomC1L5</room>
+    </rooms>
+    <rooms name="Course 2">
+      <room>rooms\roomC2L1</room>
+      <room>rooms\roomC2L2</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomCredits</room>

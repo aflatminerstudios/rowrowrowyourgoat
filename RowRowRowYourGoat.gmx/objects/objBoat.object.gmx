@@ -84,6 +84,9 @@ waterSpeed = 0;
 flowing = false;
 flowDirection = 0;
 flowStrength = 5;
+
+//Lilypad?
+isInLilypad = false;
 </string>
           </argument>
         </arguments>
@@ -162,6 +165,33 @@ curFrame = numFrames + 1;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Check for lilypad
+
+if (place_meeting(x, y, objLilypad)) {
+  isInLilypad = true;
+} else {
+  isInLilypad = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Check for strokes
 
 if ((curFrame &gt; accelFrames || curFrame &gt; numFrames) &amp;&amp; scrCheckLeftButton()) {
@@ -209,6 +239,9 @@ if (!bouncing) {
 
   //Set speed  
   speed = curForward;
+  if (isInLilypad) {
+    speed *= 0.5;
+  }
     
   if (curFrame &lt; accelFrames) {  
     direction += curTurn;

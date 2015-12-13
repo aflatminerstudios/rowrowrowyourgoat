@@ -62,6 +62,8 @@
     <instance objName="objPlaceholderEnemy" x="800" y="512" name="inst_C03DD2FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTimer" x="704" y="320" name="inst_28AC17B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBearAbove" x="480" y="192" name="inst_D8939D56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLilypad" x="672" y="192" name="inst_3567F501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLilypad" x="576" y="64" name="inst_77FB4684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
