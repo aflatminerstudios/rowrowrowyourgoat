@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>bottom = instance_create(x, y, objShortLogBottom);
 bottom.image_angle = image_angle;
+
+image_speed = 0.15;
+bottom.image_speed = 0.15;
 </string>
           </argument>
         </arguments>
