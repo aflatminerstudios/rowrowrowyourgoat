@@ -430,7 +430,7 @@ speed = other.strength;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objCollectible">
+    <event eventtype="4" ename="objEnemy">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -447,9 +447,9 @@ speed = other.strength;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Collide with collectible
+            <string>///Call collision script
 
-scrCollideWithCollectible(self.id, other.id);
+scrCollideWithEnemy(self.id, other.id);
 </string>
           </argument>
         </arguments>
@@ -481,7 +481,7 @@ y = yprevious;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objEnemy">
+    <event eventtype="4" ename="objCollectible">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -498,9 +498,9 @@ y = yprevious;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Call collision script
+            <string>///Collide with collectible
 
-scrCollideWithEnemy(self.id, other.id);
+scrCollideWithCollectible(self.id, other.id);
 </string>
           </argument>
         </arguments>

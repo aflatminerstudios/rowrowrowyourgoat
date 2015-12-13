@@ -47,6 +47,10 @@
       <sprite>sprites\sprPastCheckpoint</sprite>
     </sprites>
     <sprite>sprites\sprRiverBottom</sprite>
+    <sprites name="Water/Underwater">
+      <sprite>sprites\sprDebris1</sprite>
+      <sprite>sprites\sprDebris2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -64,10 +68,14 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
+    <shader type="GLSLES">shaders\shaderColoredWater.shader</shader>
   </shaders>
   <objects name="objects">
-    <objects name="Shaders">
+    <objects name="Water/Underwater">
       <object>objects\objWaveShader</object>
+      <object>objects\objUnderTheSurface</object>
+      <object>objects\objOnTheSurface</object>
+      <object>objects\objDebris</object>
     </objects>
     <object>objects\objBoat</object>
     <objects name="Placeholders">
@@ -113,6 +121,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
+    <room>rooms\roomShaderTest</room>
     <room>rooms\roomLevelSelect</room>
     <rooms name="Test Course">
       <room>rooms\roomTestRoom1</room>
@@ -127,7 +136,6 @@
       <room>rooms\roomLevel1</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
-    <room>rooms\roomShaderTest</room>
     <room>rooms\roomCredits</room>
     <room>rooms\roomInstructions</room>
   </rooms>
