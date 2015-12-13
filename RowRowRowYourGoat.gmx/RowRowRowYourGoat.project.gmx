@@ -41,6 +41,7 @@
     </sprites>
     <sprite>sprites\sprTimer</sprite>
     <sprite>sprites\sprStrongCurrent</sprite>
+    <sprite>sprites\sprRiverBottom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
