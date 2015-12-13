@@ -12,6 +12,8 @@ if (!player.bouncing) {
   e.parent = player;
   e.alarm[0] = timeToPush;  
   
+  player.curFrame = player.numFrames + 1;
+  player.curForward = 0;
   player.bouncing = true;
   player.alarm[0] = timeToPush;
   player.bounceDec = bounceMax / timeToPush;
