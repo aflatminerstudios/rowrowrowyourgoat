@@ -70,6 +70,7 @@
     <objects name="AltScreens">
       <object>objects\objCreditsControl</object>
       <object>objects\objTitleControl</object>
+      <object>objects\objInstructionsControl</object>
     </objects>
     <object>objects\objGlobalsCreator</object>
     <objects name="Solid Ground">
@@ -114,6 +115,7 @@
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomShaderTest</room>
     <room>rooms\roomCredits</room>
+    <room>rooms\roomInstructions</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
