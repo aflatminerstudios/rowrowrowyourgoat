@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="objGlobalsCreator" x="0" y="0" name="inst_9087CF29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="32" y="0" name="inst_826A01A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objAFlatMinerLogoControl" x="32" y="0" name="inst_04E14EE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

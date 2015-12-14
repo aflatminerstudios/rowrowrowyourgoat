@@ -101,6 +101,9 @@
     <sprite>sprites\sprLilypad2</sprite>
     <sprite>sprites\sprLilypad3</sprite>
     <sprite>sprites\sprFreezeText</sprite>
+    <sprites name="Instructions">
+      <sprite>sprites\sprInstructions</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>

@@ -51,11 +51,11 @@
             <string>///Go to other room
 
 if (scrCheckLeftButton() || scrCheckRightButton()) {
-  room_goto(roomCourseSelect);
+  room_goto(roomInstructions);
 }
 
 if(mouse_check_button_pressed(mb_left)) {  // Tap
-  room_goto(roomCourseSelect);
+  room_goto(roomInstructions);
 }
 
 if (keyboard_check_pressed(vk_tab)) {
