@@ -28,7 +28,7 @@
             <string>///Setup variables
 
 dir = 90;
-strength = 6;
+strength = 5;
 
   r = random(1);
   
