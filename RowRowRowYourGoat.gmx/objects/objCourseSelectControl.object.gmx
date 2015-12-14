@@ -25,8 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>whichCourse = 1;
+            <string>///Set variables
+
+whichCourse = 1;
 numCourses = 4;
+
+leftPressed = -1;
+rightPressed = -1;
 </string>
           </argument>
         </arguments>
@@ -51,6 +56,39 @@ numCourses = 4;
             <kind>1</kind>
             <string>///User input
 
+
+//Set variable if mouse button is pressed
+if (scrCheckLeftButtonNoMouse()) {
+  leftPressed = 3; 
+}
+if (scrCheckRightButtonNoMouse()) {
+  rightPressed = 3;   
+}
+
+//Makes it easier for user to press both keys at once
+if ((rightPressed &gt; -1 &amp;&amp; scrCheckLeftButtonNoMouseDirect()) ||
+    (leftPressed &gt; -1 &amp;&amp; scrCheckRightButtonNoMouseDirect())){
+  global.course = whichCourse;
+  global.nextLevel = 1;
+  
+  room_goto(global.levelList[global.course, global.nextLevel])
+  
+  audio_stop_sound(sndTitle);  
+}
+
+
+if (leftPressed == 0 &amp;&amp; whichCourse &gt; 1) {
+  //Choose course to left
+  whichCourse--;
+} else if (rightPressed == 0 &amp;&amp; whichCourse &lt; numCourses) {
+  //Choose course to right
+  whichCourse++;
+}
+
+rightPressed--;
+leftPressed--;
+
+/*
 if (scrCheckLeftButtonNoMouseDirect() &amp;&amp; scrCheckRightButtonNoMouseDirect()) {
   //Select
   
@@ -71,6 +109,7 @@ if (scrCheckLeftButtonNoMouseDirect() &amp;&amp; scrCheckRightButtonNoMouseDirec
   
   
 }
+*/
 </string>
           </argument>
         </arguments>
