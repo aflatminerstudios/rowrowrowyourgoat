@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>640</xorig>
-  <yorigin>380</yorigin>
+  <yorigin>360</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -10,7 +10,7 @@
   <bbox_left>0</bbox_left>
   <bbox_right>1279</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>759</bbox_bottom>
+  <bbox_bottom>719</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>1280</width>
-  <height>760</height>
+  <height>720</height>
   <frames>
     <frame index="0">images\sprWaterSurfaceOverlay_0.png</frame>
   </frames>

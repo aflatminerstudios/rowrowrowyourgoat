@@ -112,6 +112,36 @@ for(var i = 0; i &lt; 30; i++) {
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Create fish maker
+
+instance_create(576, 780, objFishMaker);
+
+/*
+for(var i = 0; i &lt; 30; i++) {
+  var debrisType = choose(objDebris, objSurfaceDebris);
+  instance_create(irandom(680) + 300, irandom(720), debrisType);
+}
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Create objWaveShader instance
 
 instance_create(0, 0, objWaveShader);
@@ -136,7 +166,7 @@ instance_create(0, 0, objWaveShader);
           <argument>
             <kind>1</kind>
             <string>/// Create water overlay
-var waterOverlay = instance_create(640, 380, objWaterSurfaceOverlay);
+var waterOverlay = instance_create(640, 360, objWaterSurfaceOverlay);
 </string>
           </argument>
         </arguments>
