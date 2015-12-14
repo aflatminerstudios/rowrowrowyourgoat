@@ -202,9 +202,7 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames) &amp;&amp; scrCheckLe
   reachedDir = false;
   sprite_index = sprRightRow;
   image_index = 0;
-}
-
-if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckRightButton()) {
+} else if ((curFrame &gt; accelFrames || curFrame &gt; numFrames)  &amp;&amp; scrCheckRightButton()) {
 //  curForward = maxForward;
 //  curTurn = -1 * maxTurn; 
   curFrame = 0;

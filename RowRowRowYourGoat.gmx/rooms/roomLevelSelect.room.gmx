@@ -66,6 +66,11 @@
     <instance objName="objLevelSelecters" x="672" y="256" name="inst_0AFAD00A" locked="0" code="levelNumber = 3;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLevelSelecters" x="800" y="256" name="inst_E91A47E3" locked="0" code="levelNumber = 4;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLevelSelecters" x="928" y="256" name="inst_8BD5A8D6" locked="0" code="levelNumber = 5;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="416" y="416" name="inst_D804C97E" locked="0" code="levelNumber = 1;&#xA;courseNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="544" y="416" name="inst_06C5BBCC" locked="0" code="levelNumber = 2;&#xA;courseNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="672" y="416" name="inst_02988F0A" locked="0" code="levelNumber = 3;&#xA;courseNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="800" y="416" name="inst_0840568F" locked="0" code="levelNumber = 4;&#xA;courseNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="928" y="416" name="inst_CA4F318E" locked="0" code="levelNumber = 5;&#xA;courseNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

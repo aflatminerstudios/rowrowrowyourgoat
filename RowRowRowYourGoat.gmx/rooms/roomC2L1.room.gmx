@@ -59,14 +59,14 @@
     <instance objName="objShoreCourse1" x="640" y="360" name="inst_AF08E5C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="-64" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
     <instance objName="objBoat" x="912" y="368" name="inst_B019EF0B" locked="0" code="direction = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTimer" x="992" y="96" name="inst_B7602967" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="928" y="48" name="inst_B7602967" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCheckpoint" x="928" y="240" name="inst_F9A40E83" locked="0" code="number = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCheckpoint" x="704" y="176" name="inst_FE0187EB" locked="0" code="number = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCheckpoint" x="336" y="112" name="inst_96C0055B" locked="0" code="number = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStrongCurrent" x="416" y="272" name="inst_B3A22735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShortLogTop" x="976" y="608" name="inst_BE4BF2BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBearAbove" x="672" y="464" name="inst_765F8990" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTimer" x="928" y="496" name="inst_0347A9E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="960" y="688" name="inst_0347A9E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCheckpoint" x="304" y="544" name="inst_D84BA345" locked="0" code="number = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStrongCurrent" x="416" y="304" name="inst_178A1130" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="320" y="608" name="inst_DC52EA9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

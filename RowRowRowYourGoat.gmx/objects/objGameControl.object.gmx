@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Start timer, CHANGE LATER?
+            <string>///Start timer
 
-alarm[0] = room_speed;
+alarm[0] = 1;
 </string>
           </argument>
         </arguments>
@@ -240,7 +240,7 @@ timerOn = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Increment timer by 1 every second
+            <string>///Increment timer by 1 every frame
 
 if (!levelOver) {
   
@@ -248,7 +248,7 @@ if (!levelOver) {
     timer += 1;
   }
   
-  alarm[0] = room_speed;
+  alarm[0] = 1;
 }
 
 
