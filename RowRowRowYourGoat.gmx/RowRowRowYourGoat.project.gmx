@@ -79,6 +79,7 @@
       <sprite>sprites\sprDebris2</sprite>
       <sprite>sprites\sprWaterSurfaceOverlay</sprite>
       <sprite>sprites\sprFish</sprite>
+      <sprite>sprites\sprWake</sprite>
     </sprites>
     <sprites name="Shores">
       <sprite>sprites\sprOverlayCourse1</sprite>
@@ -130,6 +131,7 @@
       <object>objects\objDebrisMaker</object>
       <object>objects\objFishMaker</object>
       <object>objects\objWaterSurfaceOverlay</object>
+      <object>objects\objWake</object>
     </objects>
     <object>objects\objBoat</object>
     <objects name="Placeholders">
