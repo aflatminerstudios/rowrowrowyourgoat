@@ -197,6 +197,30 @@ if (!audio_is_playing(sndIngame)) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Set font
+
+draw_set_font(fntBasicStd);
+draw_set_color(c_black);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="11">
       <action>
@@ -443,15 +467,15 @@ if (!levelOver) {
 
 if (levelOver) {
 
-  draw_sprite(sprWhiteBG, 0, 640, 360);
+  draw_sprite(sprLevelComplete, 0, 640, 360);
 
   draw_set_color(c_black);
-
-  draw_text_transformed(200, 400, "Time: " + string(timer), 3, 3, 00);
-  draw_text_transformed(200, 500, "Total Time: " + string(global.totalScore), 3, 3, 00);
-  
+  draw_set_font(fntBasicBig);
+  draw_text(475, 400, "Time: " + string(timer) + "s");
+  draw_text(475, 500, "Total Time: " + string(global.totalScore + timer)+ "s");
+  draw_set_font(fntBasicStd);
   if (!waiting) {
-    draw_sprite(sprRightArrowBlack, 200, 500, 360);
+    draw_sprite(sprRightArrowBlack, 0, 800, 600);
   }
 }
 </string>
