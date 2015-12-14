@@ -21,4 +21,8 @@ if (!player.bouncing) {
   player.bounceStartDir = player.direction;
   player.speed = player.bounceSpeed;
 
+  snd = choose(sndExplosion1, sndExplosion2, sndExplosion4);
+  audio_play_sound(snd, 1, false);
+  
+  
 }

@@ -5,8 +5,22 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sndTitle</sound>
-    <sound>sound\sndIngame</sound>
+    <sounds name="Music">
+      <sound>sound\sndIngame</sound>
+      <sound>sound\sndTitle</sound>
+    </sounds>
+    <sounds name="SFX">
+      <sound>sound\sndExplosion2</sound>
+      <sound>sound\sndExplosion3</sound>
+      <sound>sound\sndExplosion4</sound>
+      <sound>sound\sndTimePickup1</sound>
+      <sound>sound\sndBump1</sound>
+      <sound>sound\sndBump2</sound>
+      <sound>sound\sndBump3</sound>
+      <sound>sound\sndCheckpoint1</sound>
+      <sound>sound\sndCheckpoint2</sound>
+      <sound>sound\sndExplosion1</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Placeholders">
@@ -76,7 +90,9 @@
       <sprite>sprites\sprShoreRight2</sprite>
       <sprite>sprites\sprShoreBay</sprite>
     </sprites>
-    <sprite>sprites\sprLilypad</sprite>
+    <sprite>sprites\sprLilypad1</sprite>
+    <sprite>sprites\sprLilypad2</sprite>
+    <sprite>sprites\sprLilypad3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
