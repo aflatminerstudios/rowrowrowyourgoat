@@ -176,6 +176,15 @@
       <room>rooms\roomC2L1</room>
       <room>rooms\roomC2L2</room>
       <room>rooms\roomC2L3</room>
+      <room>rooms\roomC2L4</room>
+      <room>rooms\roomC2L5</room>
+    </rooms>
+    <rooms name="Course 3">
+      <room>rooms\roomC3L1</room>
+      <room>rooms\roomC3L2</room>
+      <room>rooms\roomC3L3</room>
+      <room>rooms\roomC3L4</room>
+      <room>rooms\roomC3L5</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomCredits</room>

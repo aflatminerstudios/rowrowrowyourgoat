@@ -561,6 +561,12 @@ scrCollideWithEnemy(self.id, other.id);
 //move_outside_solid(dir, 10);
 
 //move_bounce_solid(true);
+
+var d = point_direction(x, y, other.x, other.y);
+
+x -= lengthdir_x(curForward, d);
+y -= lengthdir_y(curForward, d);
+
 </string>
           </argument>
         </arguments>
