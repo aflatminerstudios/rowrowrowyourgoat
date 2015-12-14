@@ -91,7 +91,7 @@ if (sprite_index == sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number 
 
 if(other.x &gt; x) {
   facing = 1;
-} else
+} else {
   facing = -1;
 }
   
