@@ -86,7 +86,7 @@ if (!waiting &amp;&amp; scrCheckAnyButton()) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -104,11 +104,23 @@ if (!waiting &amp;&amp; scrCheckAnyButton()) {
           <argument>
             <kind>1</kind>
             <string>///There it is
-draw_set_color(c_red);
 
-draw_text(100, 100, "You finished this course!");
-draw_text(100, 300, "Total Score: " + string(global.totalScore) + " seconds");
-draw_text(100, 500, "Press space to go back to title screen.");
+
+
+
+draw_sprite(sprCourseComplete, 0, 640, 360);
+
+draw_set_color(c_black);
+draw_set_font(fntBasicBig);
+draw_set_halign(fa_center)
+draw_text(640, 300, "Congratulations!");
+draw_set_halign(fa_left)
+draw_text(475, 450, "Time: " + string(global.totalScore)+ "s");
+
+draw_set_font(fntBasicStd);
+if (!waiting) {
+  draw_sprite(sprRightArrowBlack, 0, 800, 600);
+}
 </string>
           </argument>
         </arguments>

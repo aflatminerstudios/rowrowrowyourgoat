@@ -104,9 +104,10 @@
     <sprites name="Instructions">
       <sprite>sprites\sprInstructions</sprite>
     </sprites>
-    <sprite>sprites\sprWhiteBG</sprite>
+    <sprite>sprites\sprLevelComplete</sprite>
     <sprite>sprites\sprRightArrowBlack</sprite>
     <sprite>sprites\sprAFlatMinerLogo</sprite>
+    <sprite>sprites\sprCourseComplete</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -141,7 +142,8 @@
     <shader type="GLSLES">shaders\shaderOpaqueify.shader</shader>
   </shaders>
   <fonts name="fonts">
-    <font>fonts\fntBasic12</font>
+    <font>fonts\fntBasicBig</font>
+    <font>fonts\fntBasicStd</font>
   </fonts>
   <objects name="objects">
     <objects name="Water/Underwater">
