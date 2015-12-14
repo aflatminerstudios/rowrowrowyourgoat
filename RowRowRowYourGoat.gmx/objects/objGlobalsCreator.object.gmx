@@ -76,6 +76,13 @@ global.levelList[2, 3] = roomC2L3;
 global.levelList[2, 4] = roomC2L4;
 global.levelList[2, 5] = roomC2L5;
 global.levelList[2, 6] = roomGameover;
+
+global.levelList[3, 1] = roomC3L1;
+global.levelList[3, 2] = roomC3L2;
+global.levelList[3, 3] = roomC3L3;
+global.levelList[3, 4] = roomC3L4;
+global.levelList[3, 5] = roomC3L5;
+global.levelList[3, 6] = roomGameover;
 </string>
           </argument>
         </arguments>

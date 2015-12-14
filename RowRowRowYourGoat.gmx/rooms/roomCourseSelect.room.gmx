@@ -53,6 +53,7 @@
   <instances>
     <instance objName="objCourseSelectors" x="128" y="128" name="inst_817F1BD5" locked="0" code="courseNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCourseSelectors" x="448" y="128" name="inst_380FC68A" locked="0" code="courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCourseSelectors" x="768" y="128" name="inst_5F76149A" locked="0" code="courseNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

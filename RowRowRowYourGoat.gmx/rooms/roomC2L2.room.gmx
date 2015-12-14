@@ -54,7 +54,7 @@
     <instance objName="objGameControl" x="0" y="0" name="inst_063BE119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRiverBottom" x="640" y="360" name="inst_9715D746" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShoreCourse1" x="640" y="360" name="inst_5D3A9556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBoat" x="320" y="608" name="inst_8DECFCDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="objBoat" x="320" y="608" name="inst_8DECFCDF" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShortLogTop" x="352" y="432" name="inst_AE466181" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="15"/>
     <instance objName="objStrongCurrent" x="512" y="592" name="inst_61644BE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStrongCurrent" x="544" y="592" name="inst_0B3D8EF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

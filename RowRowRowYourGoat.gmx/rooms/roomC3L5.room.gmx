@@ -56,7 +56,14 @@
     <instance objName="objPlaceholderObstacle" x="1344" y="352" name="inst_43FF7CFF" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="656" y="768" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="-64" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
-    <instance objName="objShoreCourse1" x="640" y="360" name="inst_DC83D842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShore2" x="630" y="360" name="inst_8F270F58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="288" y="96" name="inst_2026ED25" locked="0" code="number = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShortLogTop" x="512" y="160" name="inst_622118D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLongLogTop" x="240" y="384" name="inst_0C49C29A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="75"/>
+    <instance objName="objBoat" x="656" y="512" name="inst_0E6D1B57" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="656" y="640" name="inst_9377193E" locked="0" code="number = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="816" y="640" name="inst_B4FB4D83" locked="0" code="number = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="880" y="304" name="inst_40938956" locked="0" code="number = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
