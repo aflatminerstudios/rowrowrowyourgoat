@@ -75,6 +75,10 @@
     <instance objName="objLilypad" x="480" y="304" name="inst_D0201A0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="544" y="240" name="inst_A5271624" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="480" y="240" name="inst_321EEE69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="-64" y="400" name="inst_AB80B96F" locked="0" code="" scaleX="4" scaleY="28" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="656" y="-80" name="inst_BE65C952" locked="0" code="" scaleX="41" scaleY="5.16129016876221" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="640" y="800" name="inst_73559F56" locked="0" code="" scaleX="41" scaleY="5.16129016876221" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="1344" y="400" name="inst_E8BB0DE9" locked="0" code="" scaleX="4" scaleY="28" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>1440</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,14 +52,10 @@
   </views>
   <instances>
     <instance objName="objGameControl" x="0" y="0" name="inst_063BE119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBoat" x="224" y="224" name="inst_F2C9B7C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="448" y="480" name="inst_DE23848D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="960" y="384" name="inst_A1099A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCheckpoint" x="672" y="160" name="inst_0AAD4C63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="656" y="-64" name="inst_9C79C6E1" locked="0" code="" scaleX="40.75" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="656" y="1504" name="inst_BFDB8AC4" locked="0" code="" scaleX="40.75" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="1344" y="720" name="inst_6F3F51A8" locked="0" code="" scaleX="1.71875" scaleY="45.8125" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="-80" y="752" name="inst_9F09C628" locked="0" code="" scaleX="1.71875" scaleY="45.8125" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="632" y="-20" name="inst_9C79C6E1" locked="0" code="" scaleX="40.75" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="652" y="1460" name="inst_BFDB8AC4" locked="0" code="" scaleX="40.75" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="1308" y="736" name="inst_6F3F51A8" locked="0" code="" scaleX="1.71875" scaleY="45.8125" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="-28" y="696" name="inst_9F09C628" locked="0" code="" scaleX="1.71875" scaleY="45.8125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -53,9 +53,9 @@
   <instances>
     <instance objName="objShoreCourse1" x="640" y="360" name="inst_C7353D83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameControl" x="0" y="0" name="inst_063BE119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="624" y="-48" name="inst_28179DF3" locked="0" code="" scaleX="40.25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="624" y="-16" name="inst_28179DF3" locked="0" code="" scaleX="40.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="1344" y="368" name="inst_43FF7CFF" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="640" y="768" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="656" y="736" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="-48" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
     <instance objName="objBoat" x="656" y="400" name="inst_844C7624" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBearAbove" x="888" y="472" name="inst_6C69DA9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
