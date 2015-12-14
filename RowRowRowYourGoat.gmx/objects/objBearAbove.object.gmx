@@ -31,6 +31,8 @@ bottom.image_xscale = image_xscale;
 
 image_speed = 0.2;
 bottom.image_speed = 0.2;
+
+facing = 1;
 </string>
           </argument>
         </arguments>
@@ -60,6 +62,8 @@ if (sprite_index == sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number 
   image_index = 0;
   bottom.sprite_index = sprBearIdleBelow;
   bottom.image_index = 0;
+  image_xscale = facing;
+  bottom.image_xscale = facing;
 }
 </string>
           </argument>
@@ -85,8 +89,17 @@ if (sprite_index == sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number 
             <kind>1</kind>
             <string>///Switch to swipe asset
 
+if(other.x &gt; x) {
+  facing = 1;
+} else
+  facing = -1;
+}
+  
 sprite_index = sprBearSwipeAbove;
 bottom.sprite_index = sprBearSwipeBelow;
+
+image_xscale = facing;
+bottom.image_xscale = facing;
 </string>
           </argument>
         </arguments>
