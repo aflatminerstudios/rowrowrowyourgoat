@@ -8,6 +8,7 @@
     <sounds name="Music">
       <sound>sound\sndIngame</sound>
       <sound>sound\sndTitle</sound>
+      <sound>sound\sndAFlatMinerJingle</sound>
     </sounds>
     <sounds name="SFX">
       <sound>sound\sndExplosion2</sound>
@@ -104,6 +105,11 @@
   <backgrounds name="background">
     <background>background\sprBGTest</background>
     <background>background\bgTitleScreen</background>
+    <backgrounds name="Credits">
+      <background>background\sprCreditsAFlatLogo</background>
+      <background>background\sprCreditsPeople</background>
+    </backgrounds>
+    <background>background\aFlatMinerLogo</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -152,6 +158,7 @@
       <object>objects\objCreditsControl</object>
       <object>objects\objGameoverControl</object>
       <object>objects\objTitleControl</object>
+      <object>objects\objAFlatMinerLogoControl</object>
       <object>objects\objCourseSelectControl</object>
       <object>objects\objInstructionsControl</object>
     </objects>
@@ -203,6 +210,7 @@
     <object>objects\objFreezeText</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\roomLogo</room>
     <room>rooms\roomTitle</room>
     <room>rooms\roomShaderTest</room>
     <room>rooms\roomLevelSelect</room>
