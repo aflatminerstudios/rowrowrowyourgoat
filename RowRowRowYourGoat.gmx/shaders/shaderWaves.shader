@@ -29,14 +29,16 @@ varying vec4 v_vColour;
 
 void main()
 {
-    float speedMultiplier = 0.25; 
-    vec2 uv = v_vTexcoord.xy;// / iResolution.xy;
+    float speedMultiplier = 0.25;
+    float intensityMultiplierX = 0.5;
+    float intensityMultiplierY = 1.0;
+    vec2 uv = v_vTexcoord.xy;
     
-    uv.y += (cos((uv.y + (iGlobalTime * 0.04 * speedMultiplier)) * 45.0) * 0.0019) +
-    (cos((uv.y + (iGlobalTime * 0.1 * speedMultiplier)) * 10.0) * 0.002);
+    uv.y += intensityMultiplierY * ((cos((uv.y + (iGlobalTime * 0.04 * speedMultiplier)) * 45.0) * 0.0019) +
+    (cos((uv.y + (iGlobalTime * 0.1 * speedMultiplier)) * 10.0) * 0.002));
     
-    uv.x += (sin((uv.y + (iGlobalTime * 0.07 * speedMultiplier)) * 5.0) * 0.0029) +
-    (sin((uv.y + (iGlobalTime * 0.1 * speedMultiplier)) * 5.0) * 0.002);
+    uv.x += intensityMultiplierX * ((sin((uv.y + (iGlobalTime * 0.07 * speedMultiplier)) * 5.0) * 0.0029) +
+    (sin((uv.y + (iGlobalTime * 0.1 * speedMultiplier)) * 5.0) * 0.002));
     
     
     vec4 texColor = texture2D(gm_BaseTexture,uv);

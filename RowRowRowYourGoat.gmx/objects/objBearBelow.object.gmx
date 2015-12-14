@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objJustBelowSurface</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -27,9 +27,11 @@
             <kind>1</kind>
             <string>///End swipe animation
 
+/*
 if (sprite_index = sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number - 1)) {
   sprite_index = sprBearIdleAbove;
 }
+*/
 </string>
           </argument>
         </arguments>

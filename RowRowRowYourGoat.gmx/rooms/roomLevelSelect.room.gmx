@@ -51,11 +51,21 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objLevelSelecters" x="96" y="96" name="inst_E6401301" locked="0" code="levelNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLevelSelecters" x="352" y="64" name="inst_7A883C67" locked="0" code="levelNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLevelSelecters" x="544" y="96" name="inst_F8905734" locked="0" code="levelNumber = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLevelSelecters" x="224" y="224" name="inst_7AD06364" locked="0" code="levelNumber = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLevelSelecters" x="384" y="224" name="inst_A8F48E9E" locked="0" code="levelNumber = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="416" y="640" name="inst_E6401301" locked="0" code="levelNumber = 1;&#xA;courseNumber = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="544" y="640" name="inst_7A883C67" locked="0" code="levelNumber = 2;&#xA;courseNumber = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="672" y="640" name="inst_F8905734" locked="0" code="levelNumber = 3;&#xA;courseNumber = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="800" y="640" name="inst_7AD06364" locked="0" code="levelNumber = 4;&#xA;courseNumber = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="928" y="640" name="inst_A8F48E9E" locked="0" code="levelNumber = 5;&#xA;courseNumber = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="416" y="96" name="inst_2F3986CD" locked="0" code="levelNumber = 1;&#xA;courseNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="544" y="96" name="inst_D4D52D9C" locked="0" code="levelNumber = 2;&#xA;courseNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="672" y="96" name="inst_F168579C" locked="0" code="levelNumber = 3;&#xA;courseNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="800" y="96" name="inst_80110806" locked="0" code="levelNumber = 4;&#xA;courseNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="928" y="96" name="inst_AA4B61B0" locked="0" code="levelNumber = 5;&#xA;courseNumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="416" y="256" name="inst_70048AB3" locked="0" code="levelNumber = 1;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="544" y="256" name="inst_98D70837" locked="0" code="levelNumber = 2;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="672" y="256" name="inst_0AFAD00A" locked="0" code="levelNumber = 3;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="800" y="256" name="inst_E91A47E3" locked="0" code="levelNumber = 4;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelSelecters" x="928" y="256" name="inst_8BD5A8D6" locked="0" code="levelNumber = 5;&#xA;courseNumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

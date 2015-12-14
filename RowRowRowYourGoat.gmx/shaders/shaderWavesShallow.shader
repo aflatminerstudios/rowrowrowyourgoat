@@ -30,7 +30,7 @@ varying vec4 v_vColour;
 void main()
 {
     float speedMultiplier = 0.25;
-    float intensityMultiplierX = 0.3;
+    float intensityMultiplierX = 0.2;
     float intensityMultiplierY = 0.3;
     vec2 uv = v_vTexcoord.xy;
     

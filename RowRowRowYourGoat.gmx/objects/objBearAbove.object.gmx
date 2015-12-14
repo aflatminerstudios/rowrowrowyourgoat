@@ -55,8 +55,11 @@ bottom.image_speed = 0.2;
             <kind>1</kind>
             <string>///End swipe animation
 
-if (sprite_index = sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number - 1)) {
+if (sprite_index == sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number - 1)) {
   sprite_index = sprBearIdleAbove;
+  image_index = 0;
+  bottom.sprite_index = sprBearIdleBelow;
+  bottom.image_index = 0;
 }
 </string>
           </argument>
@@ -83,7 +86,6 @@ if (sprite_index = sprBearSwipeAbove &amp;&amp; image_index &gt; (image_number -
             <string>///Switch to swipe asset
 
 sprite_index = sprBearSwipeAbove;
-
 bottom.sprite_index = sprBearSwipeBelow;
 </string>
           </argument>

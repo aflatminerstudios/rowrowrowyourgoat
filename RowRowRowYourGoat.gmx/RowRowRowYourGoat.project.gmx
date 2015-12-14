@@ -46,6 +46,8 @@
       <sprite>sprites\sprBearIdleBelow</sprite>
       <sprite>sprites\sprBearSwipeAbove</sprite>
       <sprite>sprites\sprBearSwipeBelow</sprite>
+      <sprite>sprites\sprHardRocksAbove</sprite>
+      <sprite>sprites\sprHardRocksBelow</sprite>
     </sprites>
     <sprite>sprites\sprTimer</sprite>
     <sprite>sprites\sprStrongCurrent</sprite>
@@ -140,6 +142,8 @@
     <objects name="Enemies">
       <object>objects\objBearAbove</object>
       <object>objects\objBearBelow</object>
+      <object>objects\objHardRocksAbove</object>
+      <object>objects\objHardRocksBelow</object>
     </objects>
     <object>objects\objExplosion</object>
     <object>objects\objCourseSelectors</object>
