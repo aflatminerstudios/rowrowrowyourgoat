@@ -145,6 +145,7 @@
       <object>objects\objCreditsControl</object>
       <object>objects\objGameoverControl</object>
       <object>objects\objTitleControl</object>
+      <object>objects\objCourseSelectControl</object>
       <object>objects\objInstructionsControl</object>
     </objects>
     <object>objects\objGlobalsCreator</object>
