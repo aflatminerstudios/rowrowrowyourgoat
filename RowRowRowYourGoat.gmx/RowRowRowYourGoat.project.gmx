@@ -228,6 +228,9 @@
       <room>rooms\roomC3L4</room>
       <room>rooms\roomC3L5</room>
     </rooms>
+    <rooms name="Course 4">
+      <room>rooms\roomC4L1</room>
+    </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomCredits</room>
     <room>rooms\roomInstructions</room>
