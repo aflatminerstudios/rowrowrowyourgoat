@@ -245,7 +245,7 @@ timerOn = true;
 if (!levelOver) {
   
   if (timerOn) {
-    timer += 100 / room_speed / 100;
+    timer += 1 / room_speed;
   }
   
   alarm[0] = 1;

@@ -70,14 +70,12 @@
     <instance objName="objLilypad" x="624" y="384" name="inst_2D73CB42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="624" y="448" name="inst_F97C288A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBearAbove" x="768" y="416" name="inst_11AA100E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="848" y="224" name="inst_2A4BA39F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="880" y="224" name="inst_11318474" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="880" y="192" name="inst_6DF787D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="944" y="192" name="inst_FC1B657C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="848" y="192" name="inst_14704DF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="944" y="224" name="inst_C0F22CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="912" y="224" name="inst_3541743C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStrongCurrent" x="912" y="192" name="inst_8FEF78BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="848" y="240" name="inst_2A4BA39F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="896" y="240" name="inst_11318474" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="848" y="192" name="inst_6DF787D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="944" y="240" name="inst_FC1B657C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="944" y="192" name="inst_C0F22CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="896" y="192" name="inst_8FEF78BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

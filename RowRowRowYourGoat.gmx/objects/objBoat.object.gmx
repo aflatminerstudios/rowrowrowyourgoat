@@ -397,6 +397,17 @@ if (!bouncing) {
 if (bouncing) {
   direction = bounceDir;
   speed = max(speed - bounceDec, 0);
+  
+  ///Try moving and make sure you're not colliding with something
+  shadowed = place_meeting(x + hspeed, y + vspeed, objObstacle);
+  unshadowed = place_meeting(x + hspeed, y + vspeed, objNoShadowObstacle);
+  if (shadowed || unshadowed) {
+    var d = point_direction(x, y, 640, 360);
+    
+    x += lengthdir_x(2 * speed, d);
+    y += lengthdir_y(2 * speed, d);    
+  }
+  
 }
 </string>
           </argument>

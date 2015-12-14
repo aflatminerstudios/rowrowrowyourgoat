@@ -50,7 +50,9 @@
       <sprite>sprites\sprHardRocksBelow</sprite>
     </sprites>
     <sprite>sprites\sprTimer</sprite>
-    <sprite>sprites\sprStrongCurrent</sprite>
+    <sprite>sprites\sprStrongCurrent1</sprite>
+    <sprite>sprites\sprStrongCurrent2</sprite>
+    <sprite>sprites\sprStrongCurrent3</sprite>
     <sprite>sprites\sprRiverBottom</sprite>
     <sprites name="Checkpoints">
       <sprite>sprites\sprCheckpoint</sprite>
