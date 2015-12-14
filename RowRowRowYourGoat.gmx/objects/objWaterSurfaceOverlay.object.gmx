@@ -49,8 +49,8 @@ image_alpha = 0.9;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Adjust shadow offset distance
-
+            <string>/// Adjust water alpha (disabled)
+/*
 if(keyboard_check(ord('Q'))){
   image_alpha = clamp(image_alpha*0.95, 0.05, 1.0);
   show_debug_message("Water alpha is " + string(image_alpha) + ".");
@@ -58,6 +58,7 @@ if(keyboard_check(ord('Q'))){
   image_alpha = clamp(image_alpha*1.05, 0.05, 1.0);
   show_debug_message("Water alpha is " + string(image_alpha) + ".");
 }
+*/
 </string>
           </argument>
         </arguments>

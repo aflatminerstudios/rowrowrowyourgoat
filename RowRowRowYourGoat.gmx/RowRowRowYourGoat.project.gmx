@@ -112,11 +112,13 @@
     <script>scripts\scrCollideWithCollectible.gml</script>
     <script>scripts\scrEndLevel.gml</script>
     <script>scripts\scrCheckAnyButton.gml</script>
+    <script>scripts\scrDrawSpriteExtWithBlur.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
     <shader type="GLSLES">shaders\shaderWavesShallow.shader</shader>
     <shader type="GLSLES">shaders\shaderColoredWater.shader</shader>
+    <shader type="GLSLES">shaders\shaderOpaqueify.shader</shader>
   </shaders>
   <objects name="objects">
     <objects name="Water/Underwater">
