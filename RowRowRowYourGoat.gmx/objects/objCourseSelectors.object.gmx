@@ -51,7 +51,7 @@ alarm[0] = 1;
             <kind>1</kind>
             <string>///Generate sprite/Assign name
 
-sprite_index = asset_get_index("sprLevel" + string(courseNumber));
+//sprite_index = asset_get_index("sprLevel" + string(courseNumber));
 name = global.courseNames[courseNumber];
 
 
@@ -147,9 +147,11 @@ with (objCourseSelectControl) {
 
 draw_set_valign(fa_middle);
 draw_set_halign(fa_center);
+draw_set_alpha(image_alpha);
 draw_text(x, y, "Course " + string(courseNumber) + ": " + name);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

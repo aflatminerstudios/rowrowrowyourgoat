@@ -430,7 +430,15 @@ if (bouncing) {
           <argument>
             <kind>1</kind>
             <string>///Adjust for water current movement
-y -= waterSpeed;
+
+
+shadowed = place_meeting(x, y - waterSpeed, objObstacle);
+unshadowed = place_meeting(x, y - waterSpeed, objNoShadowObstacle);
+if (!shadowed &amp;&amp; !unshadowed) {
+  y -= waterSpeed;
+}
+
+
 </string>
           </argument>
         </arguments>

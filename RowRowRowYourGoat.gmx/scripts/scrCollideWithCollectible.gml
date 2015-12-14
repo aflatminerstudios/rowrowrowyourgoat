@@ -25,6 +25,7 @@ if (object.object_index == objCheckpoint) {
     with (object) {
       //alarm[0] = 1;
       sprite_index = sprPastCheckpoint;
+      image_alpha = 0.3;
     }
   }  
 } else if (object.object_index == objTimer) {

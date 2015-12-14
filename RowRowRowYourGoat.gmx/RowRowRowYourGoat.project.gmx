@@ -244,6 +244,7 @@
       <room>rooms\roomC4L5</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
+    <room>rooms\roomBigTest</room>
     <room>rooms\roomCredits</room>
     <room>rooms\roomInstructions</room>
     <room>rooms\roomCourseSelect</room>
