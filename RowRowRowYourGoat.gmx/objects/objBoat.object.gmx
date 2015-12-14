@@ -532,6 +532,7 @@ flowStrength = other.strength;
 flowing = true;
 direction = other.dir;
 speed = other.strength;
+curForward = speed;
 </string>
           </argument>
         </arguments>
