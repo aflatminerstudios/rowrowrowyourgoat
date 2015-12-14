@@ -56,7 +56,26 @@
     <instance objName="objPlaceholderObstacle" x="1344" y="352" name="inst_43FF7CFF" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="656" y="768" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="-64" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
-    <instance objName="objShoreCourse1" x="640" y="360" name="inst_DC83D842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShoreCourse1" x="624" y="368" name="inst_DC83D842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLongLogTop" x="592" y="80" name="inst_B7CC25B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="320"/>
+    <instance objName="objLongLogTop" x="800" y="96" name="inst_9A0A9BAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="40"/>
+    <instance objName="objBearAbove" x="320" y="160" name="inst_431AC406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="320" y="272" name="inst_7FA5AD13" locked="0" code="number = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="496" y="288" name="inst_67A05F58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="528" y="240" name="inst_69B15097" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="560" y="240" name="inst_013492B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="560" y="272" name="inst_9927B605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="496" y="208" name="inst_538BB133" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="528" y="208" name="inst_F95B6F6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="976" y="80" name="inst_06EA37D2" locked="0" code="number = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLilypad" x="992" y="336" name="inst_03125AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLilypad" x="912" y="336" name="inst_858BF6AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLilypad" x="992" y="400" name="inst_2304B1F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShortLogTop" x="240" y="448" name="inst_C6EBDE87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="350"/>
+    <instance objName="objCheckpoint" x="368" y="544" name="inst_2143E540" locked="0" code="number = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCheckpoint" x="448" y="640" name="inst_091A1E79" locked="0" code="number = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBoat" x="912" y="624" name="inst_5EF7DAA1" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStrongCurrent" x="496" y="240" name="inst_CFFC03D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
