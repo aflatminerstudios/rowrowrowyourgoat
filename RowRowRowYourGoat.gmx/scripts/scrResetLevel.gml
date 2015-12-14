@@ -1,0 +1,3 @@
+///scrResetLevel
+
+room_restart();

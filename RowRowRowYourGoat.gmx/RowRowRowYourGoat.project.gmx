@@ -129,6 +129,7 @@
     <script>scripts\scrEndLevel.gml</script>
     <script>scripts\scrCheckAnyButton.gml</script>
     <script>scripts\scrDrawSpriteExtWithBlur.gml</script>
+    <script>scripts\scrResetLevel.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>
