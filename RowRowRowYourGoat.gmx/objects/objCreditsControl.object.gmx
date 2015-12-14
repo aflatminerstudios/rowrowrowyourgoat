@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///goto title screen on space press
 
-if (keyboard_check_pressed(vk_space)) {
+if (scrCheckAnyButton()) {
   room_goto(roomTitle);
 }
 </string>

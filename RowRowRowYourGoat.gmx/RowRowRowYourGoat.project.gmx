@@ -104,10 +104,13 @@
     <script>scripts\scrRunWaveShader.gml</script>
     <script>scripts\scrNullScript.gml</script>
     <script>scripts\scrCheckLeftButton.gml</script>
+    <script>scripts\scrCheckLeftButtonNoMouse.gml</script>
     <script>scripts\scrCheckRightButton.gml</script>
+    <script>scripts\scrCheckRightButtonNoMouse.gml</script>
     <script>scripts\scrCollideWithEnemy.gml</script>
     <script>scripts\scrCollideWithCollectible.gml</script>
     <script>scripts\scrEndLevel.gml</script>
+    <script>scripts\scrCheckAnyButton.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderWaves.shader</shader>

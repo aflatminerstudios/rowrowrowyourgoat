@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>///Go to other room
 
-if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(vk_left)) {
+if (scrCheckLeftButton() || scrCheckRightButton()) {
   room_goto(roomCourseSelect);
 }
 

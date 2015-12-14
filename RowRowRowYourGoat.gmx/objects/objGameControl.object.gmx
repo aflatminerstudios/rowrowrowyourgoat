@@ -64,6 +64,7 @@ levelOver = false;
 
 waterSpeed = 0.3;
 
+waiting = true;
 </string>
           </argument>
         </arguments>
@@ -227,6 +228,30 @@ with (objCheckpoint) {
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Make room stop waiting for input inn level over screen
+waiting = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -310,6 +335,9 @@ if (!levelOver) {
             <string>///Sees if all checkpoints have been found
 if (instance_number(objCheckpoint) &lt; global.nextGoal) {
   levelOver = true;
+  if (alarm[2] &lt; 0) {
+    alarm[2] = room_speed;
+  }
 }
 </string>
           </argument>
@@ -332,7 +360,9 @@ if (instance_number(objCheckpoint) &lt; global.nextGoal) {
           <argument>
             <kind>1</kind>
             <string>///If level is over and space pressed, go to next level
-if (levelOver &amp;&amp; keyboard_check_pressed(vk_space)) {
+
+
+if (levelOver &amp;&amp; !waiting &amp;&amp; scrCheckAnyButton()) {
   scrEndLevel();
 }
 </string>
