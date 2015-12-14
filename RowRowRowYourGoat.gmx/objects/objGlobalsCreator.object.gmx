@@ -29,7 +29,7 @@
 
 global.courseNames[1] = "Introduction";
 global.courseNames[2] = "Watch Your Speed";
-global.courseNames[3] = "A Little Tougher";
+global.courseNames[3] = "Stick a Fork In Me";
 global.courseNames[4] = "Michael's Bay";
 global.courseNames[5] = "Current Events";
 </string>

@@ -98,7 +98,11 @@
     </sprites>
     <sprites name="PrettyShore">
       <sprite>sprites\sprOverlayCourse1</sprite>
-      <sprite>sprites\sprite63</sprite>
+      <sprite>sprites\sprOverlayLeft3</sprite>
+      <sprite>sprites\sprOverlayRight2</sprite>
+      <sprite>sprites\sprOverlayBay</sprite>
+      <sprite>sprites\sprOverlayFork</sprite>
+      <sprite>sprites\sprOverlayLeft2</sprite>
     </sprites>
     <sprite>sprites\sprLilypad1</sprite>
     <sprite>sprites\sprLilypad2</sprite>
@@ -186,7 +190,6 @@
       <object>objects\objShoreRight</object>
       <object>objects\objShore2</object>
       <object>objects\objShoreLeft</object>
-      <object>objects\objShoreOverlayCourse1</object>
       <object>objects\objShoreBay</object>
       <object>objects\objShoreLeft2</object>
       <object>objects\objShoreRight2</object>
@@ -220,6 +223,14 @@
       <object>objects\objBearBelow</object>
       <object>objects\objHardRocksAbove</object>
       <object>objects\objHardRocksBelow</object>
+    </objects>
+    <objects name="Pretty Shores">
+      <object>objects\objShoreOverlayCourse1</object>
+      <object>objects\objOverlayLeft3</object>
+      <object>objects\objOverlayRight2</object>
+      <object>objects\objOverlayFork</object>
+      <object>objects\objOverlayLeft2</object>
+      <object>objects\objOverlayBay</object>
     </objects>
     <object>objects\objExplosion</object>
     <object>objects\objCourseSelectors</object>
