@@ -27,7 +27,9 @@
             <kind>1</kind>
             <string>/// Start jingle and set timer based on jingle length
 audio_play_sound(sndAFlatMinerJingle, 0, 0);
-alarm[0] = audio_sound_length(sndAFlatMinerJingle)*room_speed;
+alarm[0] = audio_sound_length(sndAFlatMinerJingle)*room_speed + room_speed;
+
+steps = 0;
 </string>
           </argument>
         </arguments>
@@ -105,6 +107,59 @@ alarm[1] = 0*room_speed+1;
 if (scrCheckAnyButton()) {
   alarm[1] = 1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Update timer for shader
+steps++;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Wobble the logo
+
+shader_set(shaderWavesShallow);
+var shaderTime = shader_get_uniform(shaderWaves, "iGlobalTime");
+shader_set_uniform_f(shaderTime, steps);
+draw_background(bgAFlatMinerLogo, 0, 0);
+shader_reset();
+//draw_sprite(sprAFlatMinerLogo, 0, 0, 0);
+
 </string>
           </argument>
         </arguments>

@@ -106,6 +106,7 @@
     </sprites>
     <sprite>sprites\sprWhiteBG</sprite>
     <sprite>sprites\sprRightArrowBlack</sprite>
+    <sprite>sprites\sprAFlatMinerLogo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -114,7 +115,7 @@
       <background>background\sprCreditsAFlatLogo</background>
       <background>background\sprCreditsPeople</background>
     </backgrounds>
-    <background>background\aFlatMinerLogo</background>
+    <background>background\bgAFlatMinerLogo</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
