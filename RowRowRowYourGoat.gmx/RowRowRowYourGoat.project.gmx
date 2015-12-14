@@ -137,6 +137,9 @@
     <shader type="GLSLES">shaders\shaderColoredWater.shader</shader>
     <shader type="GLSLES">shaders\shaderOpaqueify.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\fntBasic12</font>
+  </fonts>
   <objects name="objects">
     <objects name="Water/Underwater">
       <object>objects\objWaveShader</object>
