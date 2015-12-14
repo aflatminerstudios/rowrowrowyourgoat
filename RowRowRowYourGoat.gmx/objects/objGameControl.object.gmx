@@ -248,6 +248,9 @@ with (objCheckpoint) {
 
 timerOn = true;
 
+with (objFreezeText) {
+  instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -360,10 +363,6 @@ if (!levelOver) {
   draw_set_color(c_red);
   
   draw_text(640, 50, timer);
-
-  if (!timerOn) {
-    draw_sprite(sprTimer, 0, 680, 50);
-  }
   
 }
 </string>

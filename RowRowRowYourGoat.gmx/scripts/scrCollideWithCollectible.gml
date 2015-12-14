@@ -32,6 +32,7 @@ if (object.object_index == objCheckpoint) {
   with (objGameControl) {
     timerOn = false;
     alarm[1] = 5 * room_speed;
+    instance_create(x, y, objFreezeText);
   }
   audio_play_sound(sndTimePickup1,1,false);
 

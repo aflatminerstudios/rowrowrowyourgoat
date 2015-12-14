@@ -93,6 +93,7 @@
     <sprite>sprites\sprLilypad1</sprite>
     <sprite>sprites\sprLilypad2</sprite>
     <sprite>sprites\sprLilypad3</sprite>
+    <sprite>sprites\sprFreezeText</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -183,6 +184,7 @@
     <object>objects\objStrongCurrent</object>
     <object>objects\objRiverBottom</object>
     <object>objects\objLilypad</object>
+    <object>objects\objFreezeText</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
