@@ -3,7 +3,7 @@
   <spriteName>sprDebris1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>490</depth>
+  <depth>100</depth>
   <persistent>0</persistent>
   <parentName>objOnTheSurface</parentName>
   <maskName>&lt;undefined&gt;</maskName>

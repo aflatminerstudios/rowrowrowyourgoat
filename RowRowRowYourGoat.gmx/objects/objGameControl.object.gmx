@@ -331,6 +331,10 @@ if (!levelOver) {
   
   draw_text(640, 50, timer);
 
+  if (!timerOn) {
+    draw_sprite(sprTimer, 0, 680, 50);
+  }
+  
 }
 </string>
           </argument>
