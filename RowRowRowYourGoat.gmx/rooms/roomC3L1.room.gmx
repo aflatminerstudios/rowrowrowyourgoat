@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>720</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -54,7 +54,7 @@
     <instance objName="objShoreFork" x="656" y="152" name="inst_3D17C707" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShoreLeft2" x="136" y="360" name="inst_8A877599" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameControl" x="0" y="0" name="inst_063BE119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaceholderObstacle" x="648" y="-24" name="inst_28179DF3" locked="0" code="" scaleX="40.25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaceholderObstacle" x="648" y="-21" name="inst_28179DF3" locked="0" code="" scaleX="40.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="1344" y="352" name="inst_43FF7CFF" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="656" y="768" name="inst_6F32DE33" locked="0" code="" scaleX="40.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlaceholderObstacle" x="-64" y="352" name="inst_1C5F3D51" locked="0" code="" scaleX="1.33333337306976" scaleY="22.65625" colour="4294967295" rotation="0"/>
@@ -78,7 +78,7 @@
     <instance objName="objLilypad" x="784" y="336" name="inst_721E35C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="912" y="400" name="inst_BD82E8EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="848" y="336" name="inst_FD4842CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHardRocksAbove" x="304" y="120" name="inst_F5D7E72E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objHardRocksAbove" x="224" y="80" name="inst_F5D7E72E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
