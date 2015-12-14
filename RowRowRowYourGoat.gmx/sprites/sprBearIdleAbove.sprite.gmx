@@ -21,5 +21,12 @@
   <height>137</height>
   <frames>
     <frame index="0">images\sprBearIdleAbove_0.png</frame>
+    <frame index="1">images\sprBearIdleAbove_1.png</frame>
+    <frame index="2">images\sprBearIdleAbove_2.png</frame>
+    <frame index="3">images\sprBearIdleAbove_3.png</frame>
+    <frame index="4">images\sprBearIdleAbove_4.png</frame>
+    <frame index="5">images\sprBearIdleAbove_5.png</frame>
+    <frame index="6">images\sprBearIdleAbove_6.png</frame>
+    <frame index="7">images\sprBearIdleAbove_7.png</frame>
   </frames>
 </sprite>
