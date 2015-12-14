@@ -10,7 +10,7 @@
   <bbox_left>31</bbox_left>
   <bbox_right>218</bbox_right>
   <bbox_top>13</bbox_top>
-  <bbox_bottom>173</bbox_bottom>
+  <bbox_bottom>167</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -25,9 +25,5 @@
     <frame index="2">images\sprBearSwipeBelow_2.png</frame>
     <frame index="3">images\sprBearSwipeBelow_3.png</frame>
     <frame index="4">images\sprBearSwipeBelow_4.png</frame>
-    <frame index="5">images\sprBearSwipeBelow_5.png</frame>
-    <frame index="6">images\sprBearSwipeBelow_6.png</frame>
-    <frame index="7">images\sprBearSwipeBelow_7.png</frame>
-    <frame index="8">images\sprBearSwipeBelow_8.png</frame>
   </frames>
 </sprite>
