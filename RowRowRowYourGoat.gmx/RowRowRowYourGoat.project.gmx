@@ -89,6 +89,11 @@
       <sprite>sprites\sprShoreFork</sprite>
       <sprite>sprites\sprShoreLeft2</sprite>
       <sprite>sprites\sprShoreRight2</sprite>
+      <sprite>sprites\sprShoreLeft1</sprite>
+      <sprite>sprites\sprShoreRight1</sprite>
+      <sprite>sprites\sprShoreLongLeft</sprite>
+      <sprite>sprites\sprShoreLongRight</sprite>
+      <sprite>sprites\sprShoreLeft3</sprite>
       <sprite>sprites\sprShoreBay</sprite>
     </sprites>
     <sprite>sprites\sprLilypad1</sprite>
@@ -150,11 +155,12 @@
     </objects>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>
-    <objects name="Solid Ground">
+    <objects name="Shores">
       <object>objects\objShoreRight</object>
       <object>objects\objShore2</object>
       <object>objects\objShoreLeft</object>
       <object>objects\objShoreOverlayCourse1</object>
+      <object>objects\objShoreBay</object>
       <object>objects\objShoreLeft2</object>
       <object>objects\objShoreRight2</object>
       <object>objects\objShoreFork</object>
@@ -230,6 +236,10 @@
     </rooms>
     <rooms name="Course 4">
       <room>rooms\roomC4L1</room>
+      <room>rooms\roomC4L2</room>
+      <room>rooms\roomC4L3</room>
+      <room>rooms\roomC4L4</room>
+      <room>rooms\roomC4L5</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomCredits</room>

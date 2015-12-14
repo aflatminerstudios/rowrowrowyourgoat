@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>parent = noone;
+
+image_speed = 0.135;
 </string>
           </argument>
         </arguments>
