@@ -111,6 +111,7 @@
     <sprite>sprites\sprRightArrowBlack</sprite>
     <sprite>sprites\sprAFlatMinerLogo</sprite>
     <sprite>sprites\sprCourseComplete</sprite>
+    <sprite>sprites\sprGameLogoSmall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -177,6 +178,7 @@
       <object>objects\objAFlatMinerLogoControl</object>
       <object>objects\objCourseSelectControl</object>
       <object>objects\objInstructionsControl</object>
+      <object>objects\objGameLogoSmall</object>
     </objects>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>
