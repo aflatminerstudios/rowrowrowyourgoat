@@ -28,7 +28,7 @@
             <string>///Set variables
 
 whichCourse = 1;
-numCourses = 4;
+numCourses = 5;
 
 leftPressed = -1;
 rightPressed = -1;

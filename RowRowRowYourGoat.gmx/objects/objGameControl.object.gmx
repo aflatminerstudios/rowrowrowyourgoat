@@ -471,8 +471,8 @@ if (levelOver) {
 
   draw_set_color(c_black);
   draw_set_font(fntBasicBig);
-  draw_text(475, 400, "Time: " + string(timer) + "s");
-  draw_text(475, 500, "Total Time: " + string(global.totalScore + timer)+ "s");
+  draw_text(475, 300, "Time: " + string(timer) + "s");
+  draw_text(475, 400, "Total Time: " + string(global.totalScore + timer)+ "s");
   draw_set_font(fntBasicStd);
   if (!waiting) {
     draw_sprite(sprRightArrowBlack, 0, 800, 600);

@@ -31,6 +31,7 @@ global.courseNames[1] = "Introduction";
 global.courseNames[2] = "Watch Your Speed";
 global.courseNames[3] = "A Little Tougher";
 global.courseNames[4] = "Michael's Bay";
+global.courseNames[5] = "Current Events";
 </string>
           </argument>
         </arguments>
@@ -138,6 +139,13 @@ global.levelList[4, 3] = roomC4L3;
 global.levelList[4, 4] = roomC4L4;
 global.levelList[4, 5] = roomC4L5;
 global.levelList[4, 6] = roomGameover;
+
+global.levelList[5, 1] = roomC5L1;
+global.levelList[5, 2] = roomC5L2;
+global.levelList[5, 3] = roomC5L3;
+global.levelList[5, 4] = roomC5L4;
+global.levelList[5, 5] = roomC5L5;
+global.levelList[5, 6] = roomGameover;
 </string>
           </argument>
         </arguments>

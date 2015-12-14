@@ -83,7 +83,6 @@
       <sprite>sprites\sprWake</sprite>
     </sprites>
     <sprites name="Shores">
-      <sprite>sprites\sprOverlayCourse1</sprite>
       <sprite>sprites\sprShoreCourse1</sprite>
       <sprite>sprites\sprShore2</sprite>
       <sprite>sprites\sprShoreIsland</sprite>
@@ -96,6 +95,10 @@
       <sprite>sprites\sprShoreLongRight</sprite>
       <sprite>sprites\sprShoreLeft3</sprite>
       <sprite>sprites\sprShoreBay</sprite>
+    </sprites>
+    <sprites name="PrettyShore">
+      <sprite>sprites\sprOverlayCourse1</sprite>
+      <sprite>sprites\sprite63</sprite>
     </sprites>
     <sprite>sprites\sprLilypad1</sprite>
     <sprite>sprites\sprLilypad2</sprite>
@@ -184,7 +187,9 @@
       <object>objects\objShoreBay</object>
       <object>objects\objShoreLeft2</object>
       <object>objects\objShoreRight2</object>
+      <object>objects\objShoreLeft3</object>
       <object>objects\objShoreFork</object>
+      <object>objects\objShroeRight1</object>
       <object>objects\objShoreCourse1</object>
     </objects>
     <objects name="Obstacles">
@@ -262,6 +267,13 @@
       <room>rooms\roomC4L3</room>
       <room>rooms\roomC4L4</room>
       <room>rooms\roomC4L5</room>
+    </rooms>
+    <rooms name="Course 5">
+      <room>rooms\roomC5L1</room>
+      <room>rooms\roomC5L2</room>
+      <room>rooms\roomC5L3</room>
+      <room>rooms\roomC5L4</room>
+      <room>rooms\roomC5L5</room>
     </rooms>
     <room>rooms\roomBigLevelTemplate</room>
     <room>rooms\roomBigTest</room>
