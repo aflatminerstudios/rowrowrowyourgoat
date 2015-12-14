@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>waiting = true;
+            <string>///Set variables and high score
+waiting = true;
 alarm[0] = room_speed;
+
+global.highScores[global.course] = global.totalScore;
 </string>
           </argument>
         </arguments>
@@ -72,11 +75,11 @@ alarm[0] = room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Check for space
+            <string>///Check for any key
 
 if (!waiting &amp;&amp; scrCheckAnyButton()) {
   audio_stop_sound(sndIngame);
-  room_goto(roomTitle);
+  room_goto(roomCourseSelect);
 }
 </string>
           </argument>
@@ -104,7 +107,7 @@ if (!waiting &amp;&amp; scrCheckAnyButton()) {
 draw_set_color(c_red);
 
 draw_text(100, 100, "You finished this course!");
-draw_text(100, 300, "Total Score: " + string(global.totalScore));
+draw_text(100, 300, "Total Score: " + string(global.totalScore) + " seconds");
 draw_text(100, 500, "Press space to go back to title screen.");
 </string>
           </argument>

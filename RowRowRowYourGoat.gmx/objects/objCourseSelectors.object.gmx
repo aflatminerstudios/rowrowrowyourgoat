@@ -135,7 +135,7 @@ audio_stop_sound(sndTitle);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Draw text
+            <string>///Draw text
 
 with (objCourseSelectControl) {
   if (whichCourse == other.courseNumber) {
@@ -147,11 +147,11 @@ with (objCourseSelectControl) {
 
 draw_set_valign(fa_middle);
 draw_set_halign(fa_center);
-draw_set_alpha(image_alpha);
 draw_text(x, y, "Course " + string(courseNumber) + ": " + name);
+draw_text(x, y + 50, "Best Time: " + string(global.highScores[courseNumber]) + " seconds");
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
-draw_set_alpha(1);
+
 </string>
           </argument>
         </arguments>
