@@ -104,6 +104,8 @@
     <sprites name="Instructions">
       <sprite>sprites\sprInstructions</sprite>
     </sprites>
+    <sprite>sprites\sprWhiteBG</sprite>
+    <sprite>sprites\sprRightArrowBlack</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>

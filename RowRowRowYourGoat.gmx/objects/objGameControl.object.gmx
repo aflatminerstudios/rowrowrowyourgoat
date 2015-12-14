@@ -337,7 +337,7 @@ if (instance_number(objCheckpoint) &lt; global.nextGoal) {
   levelOver = true;
   if (alarm[2] &lt; 0) {
     alarm[2] = room_speed;
-  }
+  }  
 }
 </string>
           </argument>
@@ -386,7 +386,7 @@ if (levelOver &amp;&amp; !waiting &amp;&amp; scrCheckAnyButton()) {
           <argument>
             <kind>1</kind>
             <string>///Check for room restart
-if (keyboard_check_pressed(ord('R'))) {
+if (!levelOver &amp;&amp; keyboard_check_pressed(ord('R'))) {
   scrResetLevel();
 }
 </string>
@@ -442,10 +442,17 @@ if (!levelOver) {
             <string>///Level over messages
 
 if (levelOver) {
+
+  draw_sprite(sprWhiteBG, 0, 640, 360);
+
   draw_set_color(c_black);
-  draw_text_transformed(400, 150, "You win!", 5, 5, -20);
-  draw_text_transformed(200, 400, "Score: " + string(timer), 3, 3, 00);
-  draw_text_transformed(200, 550, "Press space to continue", 2, 2, -20);
+
+  draw_text_transformed(200, 400, "Time: " + string(timer), 3, 3, 00);
+  draw_text_transformed(200, 500, "Total Time: " + string(global.totalScore), 3, 3, 00);
+  
+  if (!waiting) {
+    draw_sprite(sprRightArrowBlack, 200, 500, 360);
+  }
 }
 </string>
           </argument>
