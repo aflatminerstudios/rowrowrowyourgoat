@@ -72,7 +72,7 @@
     <instance objName="objLilypad" x="368" y="192" name="inst_E8E44CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="336" y="256" name="inst_24890ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLilypad" x="304" y="320" name="inst_0410178F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLongLogTop" x="960" y="304" name="inst_924696A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="150"/>
+    <instance objName="objLongLogTop" x="960" y="304" name="inst_924696A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="330"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

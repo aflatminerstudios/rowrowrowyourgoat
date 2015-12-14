@@ -120,6 +120,7 @@
       <background>background\sprCreditsPeople</background>
     </backgrounds>
     <background>background\bgAFlatMinerLogo</background>
+    <background>background\bgRiverScene</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
