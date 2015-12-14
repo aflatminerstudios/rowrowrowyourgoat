@@ -238,7 +238,7 @@ if ((curFrame &gt; accelFrames || curFrame &gt; numFrames) &amp;&amp; scrCheckLe
             <kind>1</kind>
             <string>///Movement
 
-if (!bouncing) {
+if (!bouncing &amp;&amp; !flowing) {
 
   //Set speed  
   speed = curForward;
@@ -467,7 +467,11 @@ if (!shadowed &amp;&amp; !unshadowed) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>///Set flowing off if not on rapids
+if (!place_meeting(x, y, objStrongCurrent)) {
+  flowing = false;
+}
+</string>
           </argument>
         </arguments>
       </action>
