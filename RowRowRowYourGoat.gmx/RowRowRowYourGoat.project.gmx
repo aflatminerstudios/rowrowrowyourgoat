@@ -121,17 +121,18 @@
     </sprites>
     <sprite>sprites\sprLevelComplete</sprite>
     <sprite>sprites\sprRightArrowBlack</sprite>
+    <sprite>sprites\sprRightArrowWhite</sprite>
     <sprite>sprites\sprAFlatMinerLogo</sprite>
     <sprite>sprites\sprCourseComplete</sprite>
     <sprite>sprites\sprGameLogoSmall</sprite>
     <sprite>sprites\sprTimerBackground</sprite>
+    <sprite>sprites\sprCreditsButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
     <background>background\bgTitleScreen</background>
     <backgrounds name="Credits">
-      <background>background\sprCreditsAFlatLogo</background>
-      <background>background\sprCreditsPeople</background>
+      <background>background\bgCredits</background>
     </backgrounds>
     <background>background\bgAFlatMinerLogo</background>
     <background>background\bgRiverScene</background>
@@ -195,6 +196,8 @@
       <object>objects\objInstructionsControl</object>
       <object>objects\objGameLogoSmall</object>
       <object>objects\objCourseTitle</object>
+      <object>objects\objSelectDesc</object>
+      <object>objects\objChangeDesc</object>
     </objects>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>
@@ -251,6 +254,7 @@
     <object>objects\objRiverBottom</object>
     <object>objects\objLilypad</object>
     <object>objects\objFreezeText</object>
+    <object>objects\objCreditsButton</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomLogo</room>
