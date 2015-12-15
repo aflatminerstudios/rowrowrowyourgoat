@@ -356,33 +356,6 @@ if (!levelOver) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Sees if all checkpoints have been found
-if (instance_number(objCheckpoint) &lt; global.nextGoal) {
-  levelOver = true;
-  if (alarm[2] &lt; 0) {
-    alarm[2] = 2 * room_speed;
-  }  
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///If level is over and space pressed, go to next level
 
 
@@ -437,6 +410,33 @@ if (!levelOver &amp;&amp; keyboard_check_pressed(ord('R'))) {
 if (keyboard_check_pressed(vk_escape)) {
   audio_stop_sound(sndIngame);
   room_goto(roomCourseSelect);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Sees if all checkpoints have been found
+if (instance_number(objCheckpoint) &lt; global.nextGoal) {
+  levelOver = true;
+  if (alarm[2] &lt; 0) {
+    alarm[2] = 2 * room_speed;
+  }  
 }
 </string>
           </argument>
@@ -501,9 +501,17 @@ if (levelOver) {
 
   draw_set_color(c_black);
   draw_set_font(fntBasicBig);
+  
   draw_text(475, 250, "Level " + string(global.course) + " - " + string(global.nextLevel));
+  draw_text(475, 325, '"' + global.levelNames[global.course, global.nextLevel] + '"');
+  draw_text(475, 400, "Time: " + string(timer) + "s");
+  draw_text(475, 475, "Total Time: " + string(global.totalScore + timer)+ "s");
+  
+  /*draw_text(475, 250, "Level " + string(global.course) + " - " + string(global.nextLevel));
   draw_text(475, 350, "Time: " + string(timer) + "s");
   draw_text(475, 450, "Total Time: " + string(global.totalScore + timer)+ "s");
+  */
+  
   draw_set_font(fntBasicStd);
   if (!waiting) {
     draw_sprite(sprRightArrowBlack, 0, 800, 600);

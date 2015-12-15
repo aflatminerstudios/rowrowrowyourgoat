@@ -177,6 +177,57 @@ for (var i = 0; i &lt; array_length_1d(global.courseNames); ++i) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Level Names
+
+global.levelNames[1, 1] = "The Taste Test";
+global.levelNames[1, 2] = "Second Helping";
+global.levelNames[1, 3] = "Gettin' Twiggy";
+global.levelNames[1, 4] = "Goat-dilocks";
+global.levelNames[1, 5] = "Intro to Clocks";
+
+global.levelNames[2, 1] = "Tricks and Treats";
+global.levelNames[2, 2] = "Fun with Lilypads";
+global.levelNames[2, 3] = "Crossing Guard";
+global.levelNames[2, 4] = "What's Your Angle?";
+global.levelNames[2, 5] = "O.M.B.";
+
+global.levelNames[3, 1] = "Fork This";
+global.levelNames[3, 2] = "Fork 'n Current";
+global.levelNames[3, 3] = "Fork Backwards";
+global.levelNames[3, 4] = "Fourk";
+global.levelNames[3, 5] = "'N' is for Fork";
+
+global.levelNames[4, 1] = "To the Left";
+global.levelNames[4, 2] = "Get Turnt";
+global.levelNames[4, 3] = "Just a Nudge";
+global.levelNames[4, 4] = "Speed or Greed";
+global.levelNames[4, 5] = "Twin Bleats";
+
+global.levelNames[5, 1] = "Loopy";
+global.levelNames[5, 2] = "Wait Your Turn";
+global.levelNames[5, 3] = "Where's the Frog?";
+global.levelNames[5, 4] = "Revenge fo the Stream";
+global.levelNames[5, 5] = "Sea Sixness";
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
