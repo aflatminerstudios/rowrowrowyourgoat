@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Set variables and high score
 waiting = true;
-alarm[0] = room_speed;
+alarm[0] = 2 * room_speed;
 
 global.highScores[global.course] = global.totalScore;
 </string>

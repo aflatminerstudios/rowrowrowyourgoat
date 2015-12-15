@@ -360,7 +360,7 @@ if (!levelOver) {
 if (instance_number(objCheckpoint) &lt; global.nextGoal) {
   levelOver = true;
   if (alarm[2] &lt; 0) {
-    alarm[2] = room_speed;
+    alarm[2] = 2 * room_speed;
   }  
 }
 </string>
@@ -438,10 +438,15 @@ if (!levelOver &amp;&amp; keyboard_check_pressed(ord('R'))) {
             <string>///Draw timer
 
 if (!levelOver) {
-  draw_set_color(c_red);
-  
-  draw_text(640, 50, timer);
-  
+  draw_sprite(sprTimerBackground, 0, 640, 40);
+  draw_set_font(fntBasicTimer);
+  draw_set_color(c_white);  
+  draw_set_halign(fa_center);
+  draw_set_valign(fa_middle);
+  draw_text(640, 40, timer);
+  draw_set_halign(fa_left);
+  draw_set_valign(fa_top);
+  draw_set_font(fntBasicStd);  
 }
 </string>
           </argument>
@@ -471,8 +476,9 @@ if (levelOver) {
 
   draw_set_color(c_black);
   draw_set_font(fntBasicBig);
-  draw_text(475, 300, "Time: " + string(timer) + "s");
-  draw_text(475, 400, "Total Time: " + string(global.totalScore + timer)+ "s");
+  draw_text(475, 250, "Level " + string(global.course) + " - " + string(global.nextLevel));
+  draw_text(475, 350, "Time: " + string(timer) + "s");
+  draw_text(475, 450, "Total Time: " + string(global.totalScore + timer)+ "s");
   draw_set_font(fntBasicStd);
   if (!waiting) {
     draw_sprite(sprRightArrowBlack, 0, 800, 600);

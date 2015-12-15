@@ -116,6 +116,7 @@
     <sprite>sprites\sprAFlatMinerLogo</sprite>
     <sprite>sprites\sprCourseComplete</sprite>
     <sprite>sprites\sprGameLogoSmall</sprite>
+    <sprite>sprites\sprTimerBackground</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\sprBGTest</background>
@@ -153,6 +154,7 @@
   <fonts name="fonts">
     <font>fonts\fntBasicBig</font>
     <font>fonts\fntBasicStd</font>
+    <font>fonts\fntBasicTimer</font>
   </fonts>
   <objects name="objects">
     <objects name="Water/Underwater">
