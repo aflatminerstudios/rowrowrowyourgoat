@@ -32,6 +32,8 @@ numCourses = 5;
 
 leftPressed = -1;
 rightPressed = -1;
+
+global.totalScore = 0;
 </string>
           </argument>
         </arguments>

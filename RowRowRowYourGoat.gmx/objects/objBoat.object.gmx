@@ -243,7 +243,11 @@ if (!bouncing &amp;&amp; !flowing) {
   //Set speed  
   speed = curForward;
   if (isInLilypad) {
-    speed *= 0.5;
+    if (global.course == 5) { 
+      speed *= 0.55
+    } else {
+      speed *= 0.4;
+    }
   }
     
   if (curFrame &lt; accelFrames) {  
