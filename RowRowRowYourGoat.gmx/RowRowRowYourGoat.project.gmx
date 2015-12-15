@@ -122,6 +122,7 @@
     <sprite>sprites\sprLevelComplete</sprite>
     <sprite>sprites\sprRightArrowBlack</sprite>
     <sprite>sprites\sprRightArrowWhite</sprite>
+    <sprite>sprites\sprEmptyButtonWhite</sprite>
     <sprite>sprites\sprAFlatMinerLogo</sprite>
     <sprite>sprites\sprCourseComplete</sprite>
     <sprite>sprites\sprGameLogoSmall</sprite>
