@@ -164,7 +164,12 @@ for (i = 0; i &lt; numCourses; ++i) {
   total += global.highScores[i];
 }
 
-draw_text(512, 100, "Total Time: " + string(total) + " seconds");
+
+draw_set_font(fntBasicStd);
+draw_set_valign(fa_top);
+draw_set_halign(fa_right);
+draw_set_color(c_white);
+draw_text(1260, 20, "Total Time: " + string(total) + " seconds");
 </string>
           </argument>
         </arguments>

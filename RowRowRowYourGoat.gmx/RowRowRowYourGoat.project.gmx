@@ -39,6 +39,14 @@
       <sprite>sprites\sprBoat</sprite>
       <sprite>sprites\sprRightRow</sprite>
     </sprites>
+    <sprites name="Course Select">
+      <sprite>sprites\sprCourse1</sprite>
+      <sprite>sprites\sprCourse2</sprite>
+      <sprite>sprites\sprCourse3</sprite>
+      <sprite>sprites\sprCourse4</sprite>
+      <sprite>sprites\sprCourse5</sprite>
+      <sprite>sprites\sprCoursesTitle</sprite>
+    </sprites>
     <sprites name="LevelSelect">
       <sprite>sprites\sprLevel2</sprite>
       <sprite>sprites\sprLevel3</sprite>
@@ -127,6 +135,7 @@
     </backgrounds>
     <background>background\bgAFlatMinerLogo</background>
     <background>background\bgRiverScene</background>
+    <background>background\bgDarkOverlay</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -185,6 +194,7 @@
       <object>objects\objCourseSelectControl</object>
       <object>objects\objInstructionsControl</object>
       <object>objects\objGameLogoSmall</object>
+      <object>objects\objCourseTitle</object>
     </objects>
     <object>objects\objGlobalsCreator</object>
     <object>objects\objGameControl</object>
