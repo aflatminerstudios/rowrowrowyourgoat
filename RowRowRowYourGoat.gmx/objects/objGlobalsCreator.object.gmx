@@ -211,7 +211,7 @@ global.levelNames[3, 1] = "Fork This";
 global.levelNames[3, 2] = "Fork 'n Current";
 global.levelNames[3, 3] = "Fork Backwards";
 global.levelNames[3, 4] = "Fourk";
-global.levelNames[3, 5] = "'N' is for Fork";
+global.levelNames[3, 5] = "N is for Fork";
 
 global.levelNames[4, 1] = "To the Left";
 global.levelNames[4, 2] = "Get Turnt";
@@ -222,7 +222,7 @@ global.levelNames[4, 5] = "Twin Bleats";
 global.levelNames[5, 1] = "Loopy";
 global.levelNames[5, 2] = "Wait Your Turn";
 global.levelNames[5, 3] = "Where's the Frog?";
-global.levelNames[5, 4] = "Revenge fo the Stream";
+global.levelNames[5, 4] = "Stream's Revenge";
 global.levelNames[5, 5] = "Sea Sixness";
 </string>
           </argument>
